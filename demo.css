@@ -48,8 +48,8 @@ a, a:hover {
   margin-top: 250px;
 }
 .fh5co-banner-text-box .quote-box {
-  max-width: 455px;
-  padding: 20px 0;
+  max-width: 500px;
+  padding: 75px 0;
 }
 .fh5co-banner-text-box .quote-box h2 {
   font-family: 'Lato', sans-serif;
@@ -58,14 +58,14 @@ a, a:hover {
   font-size: 40px;
 }
 .fh5co-banner-text-box .quote-box h2 span {
-  color: #ff8013;
-  font-size: 34px;
+  color: #ff009c;
+  font-size: 25px;
 }
 .fh5co-banner-text-box .quote-box::before {
   content: "";
   position: absolute;
-  height: 38px;
-  width: 38px;
+  height: 34px;
+  width: 36px;
   left: 0;
   top: 0;
   background: url("../images/right-quote.png");

@@ -116,12 +116,13 @@ a, a:hover {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
-.fh5co-network hr, .fh5co-about-us hr {
-  border-color: #ff0077;
+.fh5co-about-us hr {
+  border-color: #fff; /* Or #ff0077 */
   border-width: 5px;
   max-width: 100px;
-  margin-left: 0;
   border-radius: 5px;
+  /* Use shorthand for margin: top/bottom auto left/right */
+  margin: 1rem auto; /* Centers horizontally, adds 1rem top/bottom margin */
 }
 .fh5co-network figure, .fh5co-about-us figure {
   text-align: center;
@@ -627,6 +628,7 @@ option {
     width: 70%;
   }
 }
+
 
 
 

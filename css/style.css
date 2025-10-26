@@ -117,12 +117,12 @@ a, a:hover {
   font-weight: 700;
 }
 .fh5co-about-us hr {
-  border-color: #fff; /* Or #ff0077 */
+  display: block; /* Make sure it's a block */
+  border-color: #fff;
   border-width: 5px;
   max-width: 150px;
   border-radius: 5px;
-  /* Use shorthand for margin: top/bottom auto left/right */
-  margin: 1rem auto; /* Centers horizontally, adds 1rem top/bottom margin */
+  margin: 1rem auto; /* Correct centering */
 }
 .fh5co-network figure, .fh5co-about-us figure {
   text-align: center;
@@ -628,6 +628,7 @@ option {
     width: 70%;
   }
 }
+
 
 
 

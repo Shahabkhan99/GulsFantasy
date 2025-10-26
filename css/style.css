@@ -119,7 +119,7 @@ a, a:hover {
 .fh5co-about-us hr {
   border-color: #fff; /* Or #ff0077 */
   border-width: 5px;
-  max-width: 100px;
+  max-width: 150px;
   border-radius: 5px;
   /* Use shorthand for margin: top/bottom auto left/right */
   margin: 1rem auto; /* Centers horizontally, adds 1rem top/bottom margin */
@@ -628,6 +628,7 @@ option {
     width: 70%;
   }
 }
+
 
 
 

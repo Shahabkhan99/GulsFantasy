@@ -17,6 +17,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+   <link href="style.css" rel="stylesheet"> -->
 
 </head>
 <body>
@@ -28,7 +34,7 @@
          <img src="images/logo.png" alt="FitnessFirst" width="180"  /></a>      
       
       
-      <!-- Toggler/collapsibe Button -->
+        <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
       
       <!-- Navbar links -->
@@ -53,7 +59,8 @@
         <h2><span> Empowering Your Wellness Journey </span></h2>
       </div>
       <a href="homeworkout.html" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">Start Now</a> 
-	  <a href="https://gulsfitness.vercel.app/" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown">Get Diet & Fitness Plan</a></div>
+	  <a href="https://gulsfitness.vercel.app/" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown">
+	  Get Diet & Fitness Plan</a></div>
 </div>
 </div>
 <div class="container-fluid fh5co-network">
@@ -182,39 +189,43 @@
       </div>
 		
       <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
- <form action="https://formsubmit.co/gulsfantasy@gmail.com" method="POST">
+  <form action="https://formsubmit.co/gulsfantasy@gmail.com" method="POST">
+    <!-- 🔒 FormSubmit security (optional but recommended) -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.youtube.com/@gulsfantasy">
+    <!-- replace with your thank-you page if you have one -->
+
     <div class="form-box">
-        <h4>CONTACT US</h4>
-        <table class="table table-responsive d-table">
-            <tr>
-                <td><input type="text" name="name" class="form-control pl-0" placeholder="NAME" required /></td>
-                
-                <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" required /></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="text" name="address" class="form-control pl-0" placeholder="ADDRESS" /></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <textarea name="message" class="form-control pl-0" placeholder="MESSAGES" rows="4"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
-            </tr>
-        </table>
+      <h4>CONTACT US</h4>
+      <table class="table table-responsive d-table">
+        <tr>
+          <td>
+            <input type="text" name="name" class="form-control pl-0" placeholder="NAME" required />
+          </td>
+          <td>
+            <input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" required />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="text" name="address" class="form-control pl-0" placeholder="ADDRESS" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea name="message" class="form-control pl-0" placeholder="MESSAGE" rows="4" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center pl-0">
+            <button type="submit" class="btn btn-dark">SEND</button>
+          </td>
+        </tr>
+      </table>
     </div>
- </form>
-      </div>
+  </form>
+</div>
+
 
       <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
 <h5>Follow Me</h5>
@@ -242,17 +253,4 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
 

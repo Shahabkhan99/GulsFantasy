@@ -27,6 +27,38 @@ The journey to a healthier body starts right now</title>
 
 </head>
 <body>
+<script async src="https://tally.so/widgets/embed.js"></script>
+<a id="scrollToTopBtn" href="#">
+  <i class="fas fa-arrow-up"></i>
+</a>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 100px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function(e) {
+    e.preventDefault(); // Prevents the <a> tag from jumping to "#"
+    
+    // Smooth scroll
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
 <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/jumba15.jpg">
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container"> 
@@ -269,54 +301,36 @@ This is the EXTENDED version of our OG 12min Dance Workout. Hope you enjoyyyyy i
 <footer class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 footer1 d-flex justify-content-center wow bounceInLeft" data-wow-delay=".25s">
+      <div class="col-md-3 footer1 d-flex justify-content-center align-items-center wow bounceInLeft" data-wow-delay=".25s">
         <div class="d-flex flex-wrap align-content-center">
           <a href="index.html"><img src="images/logo.png" alt="logo" width="300" /></a>
           <p></p>
         </div>
       </div>
 		
-      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
- <form action="https://formsubmit.co/gulsfantasy@gmail.com" method="POST">
-    <div class="form-box">
-        <h4>CONTACT US</h4>
-        <table class="table table-responsive d-table">
-            <tr>
-                <td><input type="text" name="name" class="form-control pl-0" placeholder="NAME" required /></td>
-                
-                <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" required /></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="text" name="address" class="form-control pl-0" placeholder="ADDRESS" /></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <textarea name="message" class="form-control pl-0" placeholder="MESSAGES" rows="4"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
-            </tr>
-        </table>
-    </div>
- </form>
-      </div>
+  
+
 
       <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
 <h5>Follow Me</h5>
 <div class="social-links">
-        <ul class="nav nav-item">
-            <li class="footer3"><a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a><a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" width="50" height="50" /></a><a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a><a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a><a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a></li>
-        </ul>
+<ul class="nav footer3">
+  <li class="nav-item">
+    <a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a>
+  </li>
+</ul>
         <p></p>
         <p>&copy; 2025 All rights reserved.<br></p>
 
@@ -337,7 +351,6 @@ This is the EXTENDED version of our OG 12min Dance Workout. Hope you enjoyyyyy i
 </body>
 
 </html>
-
 
 
 

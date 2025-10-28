@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -26,6 +27,40 @@
 
 </head>
 <body>
+<script async src="https://tally.so/widgets/embed.js"></script>
+<a id="scrollToTopBtn" href="#">
+  <i class="fas fa-arrow-up"></i>
+</a>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 100px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function(e) {
+    e.preventDefault(); // Prevents the <a> tag from jumping to "#"
+    
+    // Smooth scroll
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+
 <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/banner.jpg">
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container"> 
@@ -44,7 +79,9 @@
           <li class="nav-item"> <a class="nav-link" href="workout.html">Workouts</a> </li>       
           <li class="nav-item"> <a class="nav-link" href="food.html">Healthy Recipes</a> </li>
 		  <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+          <li class="nav-item">  <a class="nav-link" href="#" data-tally-open="mK78dg" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="0">Contact</a>
+          </li>
+          
         </ul>
         <ul class="navbar-nav ml-5">
           <li class="nav-item"> <a class="nav-link btn btn-danger" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
@@ -80,12 +117,14 @@
     </div>
   </div>
 </div>
-<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="images/about-us-bg.jpeg">
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="images/3.jpg">
   <div class="container">
     <div class="col-sm-6 offset-sm-6">
-      <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT US</h2>      
-      <p class="wow bounceInRight" data-wow-delay=".25s">Built on the conviction that vital health and fitness knowledge should be freely accessible, this resource is offered at no cost. My aim isn't profit, but empowerment—guided by the principle that lifting others on their journey ultimately lifts us all. Let's navigate this path to wellness together as a community. </p>
-      </div>
+      <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT US</h2>
+<p class="wow bounceInRight" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: bounceInRight; background-color: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 20px; border-radius: 10px; color: white;">
+  Built on the conviction that vital health and fitness knowledge should be freely accessible, this resource is offered at no cost. My aim isn't profit, but empowerment—guided by the principle that lifting others on their journey ultimately lifts us all. Let's navigate this path to wellness together as a community.
+</p>
+    </div>
   </div>
 </div>
 <div class="container-fluid fh5co-content-box">
@@ -99,7 +138,7 @@
 			<p>Take care of your body. It's the only place you have to live. </p>
 			<p>Fitness is not about being better than someone else. It's about being better than you used to be. </p>
           </div>
-          <img src="images/gym-girls.jpg" alt="girls in gym" class="img-fluid" /> </div>
+          <img src="images/about-us-bg.jpeg" alt="girls in gym" width="50" height="33" class="img-fluid" /> </div>
       </div>
     </div>
    
@@ -181,58 +220,36 @@
 <footer class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 footer1 d-flex justify-content-center wow bounceInLeft" data-wow-delay=".25s">
+      <div class="col-md-3 footer1 d-flex justify-content-center align-items-center wow bounceInLeft" data-wow-delay=".25s">
         <div class="d-flex flex-wrap align-content-center">
           <a href="index.html"><img src="images/logo.png" alt="logo" width="300" /></a>
           <p></p>
         </div>
       </div>
 		
-      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
-  <form action="https://formsubmit.co/gulsfantasy@gmail.com" method="POST">
-    <!-- 🔒 FormSubmit security (optional but recommended) -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://www.youtube.com/@gulsfantasy">
-    <!-- replace with your thank-you page if you have one -->
-
-    <div class="form-box">
-      <h4>CONTACT US</h4>
-      <table class="table table-responsive d-table">
-        <tr>
-          <td>
-            <input type="text" name="name" class="form-control pl-0" placeholder="NAME" required />
-          </td>
-          <td>
-            <input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" required />
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <input type="text" name="address" class="form-control pl-0" placeholder="ADDRESS" />
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <textarea name="message" class="form-control pl-0" placeholder="MESSAGE" rows="4" required></textarea>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="text-center pl-0">
-            <button type="submit" class="btn btn-dark">SEND</button>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </form>
-</div>
+  
 
 
       <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
 <h5>Follow Me</h5>
 <div class="social-links">
-        <ul class="nav nav-item">
-            <li class="footer3"><a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a><a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" width="50" height="50" /></a><a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a><a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a><a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a></li>
-        </ul>
+<ul class="nav footer3">
+  <li class="nav-item">
+    <a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a>
+  </li>
+</ul>
         <p></p>
         <p>&copy; 2025 All rights reserved.<br></p>
 
@@ -253,4 +270,17 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 

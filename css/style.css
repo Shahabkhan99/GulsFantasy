@@ -42,6 +42,34 @@ a, a:hover {
   color: #ff0077;
 }
 
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stays in one place */
+  bottom: 20px; /* 20px from the bottom */
+  right: 30px; /* 30px from the right */
+  z-index: 99; /* Makes sure it's on top */
+  
+  /* Button styling */
+  border: none;
+  outline: none;
+  background-color: #555; /* A dark background */
+  color: white; /* White text/icon */
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none; /* Removes underline from <a> tag */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #99FF00; /* Your green hover color */
+  color: #333; /* Darker text on hover */
+}
+
+
+
+
+
 .fh5co-banner-text-box {
   position: relative;
   max-height: 160px;
@@ -323,23 +351,37 @@ footer .footer2 :-moz-placeholder {
   color: #262626;
 }
 footer .footer3 {
-  padding-top: 50px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust space between circles */
 }
+
 footer .footer3 a {
-  background: transparent;
-  border: transparent; 	
+  /* Make the <a> tag a flex container to center the icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Set the size */
+  height: 40px;
+  width: 40px;
+  
+  /* 50% makes a perfect circle */
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  padding: 0;
-  padding-top: 5px;
+  
+  background: transparent;
+  border: transparent;
+  
+  /* We don't need padding anymore */
 }
+
 footer .footer3 a:hover {
   background: #99FF00;
 }
-footer .footer3 .nav-item li {
-  margin: auto ;
-}
+
 footer .table td, footer .table th {
   border: none;
 }
@@ -632,3 +674,13 @@ option {
     width: 70%;
   }
 }
+
+
+
+
+
+
+
+
+
+

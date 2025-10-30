@@ -65,15 +65,15 @@ body{
 /* can stay the same, but they will now be relative to .card-body */
 
 .card h2{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 600;
     margin-top: 0; /* Changed from 40px, as padding-top handles it */
 }
 
 /* ... (rest of your styles: .card p, .card .links, .btn) ... */
 .card p{
-    font-size: 18px;
-    margin: 15px;
+    font-size: 14px;
+    margin: 5px;
 }
 .card .links {
     display: flex;

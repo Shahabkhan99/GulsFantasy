@@ -40,7 +40,9 @@ body{
     transition: background 0.4s ease, border 0.4s ease, color 0.4s ease;
 }
 .card img{
-    width: 240px; 
+    width: 100%;        /* Make the image fill its container */
+    max-width: 240px;   /* But never let it get wider than 240px */
+    height: auto;       /* Maintain aspect ratio when width changes */
     -webkit-box-reflect: below 5px linear-gradient(to bottom, transparent 40%, rgba(255, 255, 255, 0.1));
 }
 .card h2{
@@ -192,4 +194,5 @@ body.white-theme #switch {
     100% {
         transform: rotate(360deg);
     }
+
 }

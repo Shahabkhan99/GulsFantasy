@@ -225,3 +225,23 @@ body.white-theme #switch {
         transform: rotate(360deg);
     }
 }
+/* --- Page Bottom Counter --- */
+.page-bottom-counter {
+    position: absolute;
+    bottom: 20px; /* 20px from the bottom edge */
+    width: 100%;
+    text-align: center;
+}
+
+/* This styles the 'free visitor counters' link */
+.page-bottom-counter a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white for dark theme */
+    transition: color 0.4s ease;
+}
+
+/* This makes the link dark on the white theme */
+body.white-theme .page-bottom-counter a {
+    color: rgba(0, 0, 0, 0.4); /* Semi-transparent black for light theme */
+}

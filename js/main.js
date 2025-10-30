@@ -5,6 +5,7 @@
     var wowAnimation = function() {
         var wow = new WOW(
             {
+                mobile: false, // <-- ADD THIS LINE
                 animateClass: 'animated',
                 offset:       150,
                 callback:     function(box) {

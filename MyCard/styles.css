@@ -28,28 +28,49 @@ body{
 }
 
 /* --- Shared Card Styles --- */
-.card{
+/* 1. Remove padding and text-align from the main card */
+.card {
     width: 90%;
     max-width: 440px;
-    text-align: center;
-    padding: 50px 30px;
+    /* text-align: center;  <-- REMOVE */
+    /* padding: 50px 30px; <-- REMOVE */
     border-radius: 46px;
     box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    /* Transitions for when the theme changes */
     transition: background 0.4s ease, border 0.4s ease, color 0.4s ease;
+    
+    /* Add this to make sure the image respects the rounded corners */
+    overflow: hidden; 
 }
-.card img{
-    width: 100%;        /* Make the image fill its container */
-    max-width: 240px;   /* But never let it get wider than 240px */
-    height: auto;       /* Maintain aspect ratio when width changes */
+
+/* 2. Add this NEW class for your top image */
+.card-img-top {
+    width: 100%;       /* Make it fill the card width */
+    height: 100;     /* Give it a fixed height (adjust as you like) */
+    object-fit: cover; /* Prevents stretching, crops to fit */
+    display: block;    /* Removes any extra space below the image */
+    
+    /* The reflection from your old code (optional) */
     -webkit-box-reflect: below 5px linear-gradient(to bottom, transparent 40%, rgba(255, 255, 255, 0.1));
 }
+
+/* 3. Add this NEW class for the content body */
+.card-body {
+    /* Add the padding and text-align here instead */
+    padding: 40px 30px 50px 30px; /* (top, sides, bottom) */
+    text-align: center;
+}
+
+/* All your other styles (.card h2, .card p, .links, .btn) */
+/* can stay the same, but they will now be relative to .card-body */
+
 .card h2{
     font-size: 25px;
     font-weight: 600;
-    margin-top: 40px; 
+    margin-top: 0; /* Changed from 40px, as padding-top handles it */
 }
+
+/* ... (rest of your styles: .card p, .card .links, .btn) ... */
 .card p{
     font-size: 18px;
     margin: 5px auto;
@@ -84,16 +105,7 @@ body.black-theme {
     background-position: center;
     background-size: cover;
 }
-.black-theme:before {
-  position: absolute;
-  content: "";
-  left: 40%;
-  bottom: -40%;
-  width: 600px;
-  height: 600px;
-  background: linear-gradient(#FF0077, #FF9800);
-  border-radius: 50%;
-}
+
 body.black-theme .card {
     background: rgba(255, 255, 255, 0.1); /* Your glass effect */
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -114,6 +126,16 @@ body.black-theme .card .links img:hover{
 body.black-theme #switch {
     background: #fff;
     color: #1B1B1B; /* Black icon */
+}
+.black-theme:before {
+  position: absolute;
+  content: "";
+  left: 40%;
+  bottom: -40%;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(#FF0077, #FF9800);
+  border-radius: 50%;
 }
 
 /* --- White Theme --- */
@@ -170,8 +192,8 @@ body.white-theme #switch {
 /* --- Switch Button Styles --- */
 #switch {
     position: absolute;
-    top: 35px;
-    right: 35px;
+    top: 25px;
+    right: 25px;
     border-radius: 50px;
     width: 50px;
     height: 50px;
@@ -194,5 +216,4 @@ body.white-theme #switch {
     100% {
         transform: rotate(360deg);
     }
-
 }

@@ -57,7 +57,7 @@ body{
 /* 3. Add this NEW class for the content body */
 .card-body {
     /* Add the padding and text-align here instead */
-    padding: 40px 30px 50px 30px; /* (top, sides, bottom) */
+    padding: 30px 30px 50px 30px; /* (top, sides, bottom) */
     text-align: center;
 }
 
@@ -73,7 +73,7 @@ body{
 /* ... (rest of your styles: .card p, .card .links, .btn) ... */
 .card p{
     font-size: 18px;
-    margin: 5px auto;
+    margin: 15px;
 }
 .card .links {
     display: flex;
@@ -83,7 +83,7 @@ body{
 }
 .card .links img{
     width: 50px;
-    border-radius: 50%;
+    border-radius: 100%;
     margin: auto 5px; /* Changed from 'auto auto' */
     transition: background 0.5s;
 }
@@ -101,9 +101,17 @@ body{
 
 /* --- Black Theme (Default) --- */
 body.black-theme {
-    background: url(images/back.jpg); /* Your original background */
-    background-position: center;
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0077;
+  background-image: linear-gradient(135deg, #000000 0%, #2B1515 16%, #350000 79%, #560E0E 86%);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
 
 body.black-theme .card {
@@ -130,7 +138,7 @@ body.black-theme #switch {
 .black-theme:before {
   position: absolute;
   content: "";
-  left: 40%;
+  left: center;
   bottom: -40%;
   width: 600px;
   height: 600px;
@@ -155,7 +163,7 @@ body.white-theme {
 .white-theme:before {
   position: absolute;
   content: "";
-  left: 30%;
+  left: center;
   bottom: -40%;
   width: 800px;
   height: 700px;

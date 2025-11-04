@@ -404,7 +404,7 @@ footer::before {
     margin-top: -78px;
   }
   .fh5co-content-box .card-img-overlay {
-    top: 20%;
+    top: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -517,19 +517,31 @@ section#demo {
   left: 0;
   width: 100%;
   
-  
 }
+
+
+
 .card {
-     box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.035);
-    padding: 7px 15px;
-    
-    
+    height: 700px;
+    overflow: hidden;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
 option {
      padding: 50%;
     
 }
 .box .vertical-align
+
 {
   visibility:visible;
 }
@@ -674,13 +686,3 @@ option {
     width: 70%;
   }
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,11 +1,11 @@
-<<!doctype html>
+<!doctype html>
 
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>
-The journey to a healthier body starts right now</title>
+  <title> Fitness first, the way to a healthier life starts now.</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/animate.css" rel="stylesheet">
@@ -13,71 +13,147 @@ The journey to a healthier body starts right now</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <link href="style.css" rel="stylesheet">
-
+   <link href="style.css" rel="stylesheet"> -->
 
 </head>
 <body>
-<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/yoga.jpg">
+<script async src="https://tally.so/widgets/embed.js"></script>
+<a id="scrollToTopBtn" href="#">
+  <i class="fas fa-arrow-up"></i>
+</a>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 100px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function(e) {
+    e.preventDefault(); // Prevents the <a> tag from jumping to "#"
+    
+    // Smooth scroll
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/jumba15.jpg">
   <nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container"> 
-      <!-- Brand --> 
-      <a class="navbar-brand mr-auto" href="index.html">
-         <img src="images/logo.png" alt="FitnessFirst" width="180"  /></a>     
-        
+    <!-- Brand -->
+   			<a class="navbar-brand mr-auto" href="index.html">
+  			<img id="mainLogo" src="images/logo2.png" alt="FitnessFirst"/>
+			</a>   
+
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
-      
+			<button class="navbar-toggler" style="background-color: #FF0077;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   			 <span class="navbar-toggler-icon"></span>
+  			</button>
+  			
+     <div class="container">
+     
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-           <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
-           <li class="nav-item">  <a class="nav-link" href="#" data-tally-open="mK78dg" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="0">Contact</a>
-          </li>
-           <li class="nav-item"> <a class="nav-link" href="workout.html">Workouts</a> </li>       
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="workout.html">Workouts</a> </li>       
           <li class="nav-item"> <a class="nav-link" href="food.html">Healthy Recipes</a> </li>
-         </ul>
+		  <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
+          <li class="nav-item">  <a class="nav-link" href="#" data-tally-open="mK78dg" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="0">Contact</a>
+		  <li class="nav-item"> <a class="nav-link" href="MyCard/index.html">Follow Me</a> </li>
+          </li>
+        </ul>
         <ul class="navbar-nav ml-5">
           <li class="nav-item"> <a class="nav-link btn btn-danger" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
         </ul>
       </div>
     </div>
   </nav>
+  
   <div class="container">
     <div class="fh5co-banner-text-box">
       <div class="quote-box pl-5 pr-5 wow bounceInRight" >
-       <h2> CARDIO<br><span></span> </h2>
+       <h2>ZUMBA / DANCE<br><span></span> </h2>
       </div>
     </div>
       </div>
 </div>
+
+
 <div class="container-fluid fh5co-network">
   <div class="container">
     <div class="row">
       <div class="col-md-6">   
-        <h4 class="wow bounceInUp">Surya Namaskar</h4>
+        <h4 class="wow bounceInUp">20 MIN BOSS B*TCH DANCE WORKOUT </h4>
         <h2 class="wow bounceInRight"></h2>
         <hr />
-        <h5 class="wow bounceInLeft">A complete detailed guide for a perfect yoga workout</h5>
-        <p class="wow bounceInDown">Surya Namaskar or Sun Salutation is a sequence of 12 powerful yoga poses. Besides being a great cardiovascular workout, Surya Namaskar is also known to have an immensely positive impact on the body and mind.</p>
+        <h5 class="wow bounceInLeft">Shake your booty & burn lots of calories. </h5>
+        <p class="wow bounceInDown">Wow those 20min fly by like nothing! I think 20min and 190kcal have never felt so short & easy. 
+			I am mainly in Cardio Zone 3&4 with an average heart rate of 155 S/min :D but it doesn’t feel like it at all!!! Amazing. 
+This is the EXTENDED version of our OG 12min Dance Workout. Hope you enjoyyyyy it (as much as I do hoho).  </p>
       </div>
       <div class="col-md-6">
-        <figure class="wow bounceInDown">
-
-
-         <video width="520" height="240" controls>
-        <source src="images/yoga1.mp4" type="video/mp4">
-        </figure>
+<figure class="wow bounceInDown">
+  <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/CoiiwajR-eY?si=AgApemQfGEZjiolx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   
+        <h4 class="wow bounceInUp">14 MIN KPOP DEMON HUNTERS ZUMBA - Full Body Fat Loss </h4>
+        <h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">Join Team Mizi in this 7-Day Full Body fat Loss! Each day’s workout is designed to burn fat, boost metabolism, and tone your entire body. </h5>
+        <p class="wow bounceInDown">All sessions can be done at home with no equipment, making it perfect for beginners and anyone short on time. In just one week, you’ll train every major muscle group, 
+			improve endurance, and kickstart your transformation. Stay consistent, follow along daily, and let’s get stronger, leaner, and more confident together with Team Mizi!</p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+  <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/YUYK-ShexgM?si=q1mlFcwTI5XgvnnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
       </div>
     </div>
   </div>
@@ -87,127 +163,172 @@ The journey to a healthier body starts right now</title>
   <div class="container">
     <div class="row">
       <div class="col-md-6">   
-        <h4 class="wow bounceInUp">Powerful Breathing Exercises</h4>
+        <h4 class="wow bounceInUp">30 Min Zumba Dance Workout, No equipment</h4>
         <h2 class="wow bounceInRight"></h2>
         <hr />
-        <h5 class="wow bounceInLeft">Pranayama For Beginners </h5>
-        <p class="wow bounceInDown">Your body is like the wick of a candle, and the mind is like the glow all around it. Prana is the vital energy needed by our physical and subtle layers, without which the body would perish. It is the prana or life force in us that nourishes the mind and keeps the body alive.</p>
+        <h5 class="wow bounceInLeft">Feel fitter, Lose 3 to 6 kg in just two weeks.  </h5>
+        <p class="wow bounceInDown">If you are new to exercise, you should understand that there is the possibility of physical injure. Please notice that if you performing any exercise o program, you agree that you do so at your own risk. </p>
       </div>
       <div class="col-md-6">
-        <figure class="wow bounceInDown"> 
-          <video width="520" height="240" controls>
-        <source src="images/yoga2.mp4" type="video/mp4">
-
-
-         </figure>
+<figure class="wow bounceInDown">
+  <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/StmyxV5Z5lA?si=37Diw_EOhkmU5UGb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
       </div>
     </div>
   </div>
 </div>
-
-<div class="container-fluid fh5co-network">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">   
-        <h4 class="wow bounceInUp">Nadi Shodhan Pranayama</h4>
-        <h2 class="wow bounceInRight"></h2>
-        <hr />
-        <h5 class="wow bounceInLeft">Subtle Energy Channels </h5>
-        <p class="wow bounceInDown">Nadis are subtle energy channels in the human body that can get blocked due to various reasons. The Nadi Shodhan pranayama is a breathing technique that helps clear these blocked energy channels, thus calming the mind. This technique is also known as Anulom Vilom pranayama.</p>
-      </div>
-      <div class="col-md-6">
-        <figure class="wow bounceInDown">
-         
-          <video width="520" height="240" controls>
-        <source src="images/yoga1.mp4" type="video/mp4">
-
-
-         </figure>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 
   
- <footer class="container-fluid">
+<div class="container-fluid fh5co-network">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
-        <div class="d-flex flex-wrap align-content-center"> 
-          <a href="index.html"><img src="images/logo.png" alt="logo" width="300" /></a>
-          <p></p>
-          <p>&copy; 2025 All rights reserved.<br></p>
-        </div>
+      <div class="col-md-6">   
+        <h4 class="wow bounceInUp">25 Minute Dance Workout At Home | Exercise To Lose Weight FAST </h4>
+        <h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">High-energy Zumba and aerobic dance </h5>
+        <p class="wow bounceInDown">Zumba and aerobic dance routine designed as a fast-paced exercise for weight loss that you can do at home. The video is a follow-along workout set to upbeat music. </p>
       </div>
-      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
- <form action="https://formsubmit.co/gulsfantasy@gmail.com" method="POST">
-    <div class="form-box">
-        <h4>CONTACT US</h4>
-        <table class="table table-responsive d-table">
-            <tr>
-                <td><input type="text" name="name" class="form-control pl-0" placeholder="NAME" required /></td>
-                
-                <td><input type="email" name="email" class="form-control pl-0" placeholder="EMAIL" required /></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="text" name="address" class="form-control pl-0" placeholder="ADDRESS" /></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <textarea name="message" class="form-control pl-0" placeholder="MESSAGES" rows="4"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
-            </tr>
-        </table>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+  <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/_aDmJHc-DXY?si=q7lERz0W9YtX9tBC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
+      </div>
     </div>
- </form>
+  </div>
+</div>
+
+
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   
+        <h4 class="wow bounceInUp">15 MIN HAPPY DANCE WORKOUT</h4>
+        <h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">Burn calories and smile / No Equipment </h5>
+        <p class="wow bounceInDown">This version is full of hits that were popular in the 2010s. From "Shape Of You" by Ed Sheeran, 
+			to "Try Me" by Jason Derulo and J-Lo .. all songs put a big smile on my face! Judging from the dance moves, I feel like we have a mixture between the 80s Dance Video & the Sexy Dance Workout! </p>
       </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+  <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/Cw-Wt4xKD2s?si=oNhOt95VZB7FpLsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   
+        <h4 class="wow bounceInUp">18 Minute Dance Workout At Home </h4>
+        <h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">Exercise To Lose Weight FAST  </h5>
+        <p class="wow bounceInDown">18 Minute Dance Workout At Home | Exercise To Lose Weight FAST | Zumba Class </p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+  <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/u-lX1asAO-g?si=pUslW30Hungz76tQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   
+        <h4 class="wow bounceInUp">Zumba Workouts</h4>
+        <h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">Zumba fitness is fun,</h5>
+        <p class="wow bounceInDown">However, doesn’t necessarily mean it’s an effective workout. Despite its immense popularity, to date very little research has been done to document the potential benefits of this form of aerobic dance. So the American Council on Exercise, the nation's Workout Watchdog®, commissioned Dr. Porcari and his team of exercise scientists to determine whether Zumba fitness provides a workout, a party or both.</p>
+      </div>
+      
+      <div class="col-md-6">
+        <figure class="wow bounceInDown">
+         <video width="520" height="240" controls>
+        <source src="images/dance.mp4" type="video/mp4">
+        </video>
+        </figure>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
+	<!------- footer start ------->
 
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer1 d-flex justify-content-center align-items-center wow bounceInLeft" data-wow-delay=".25s">
+        <div class="d-flex flex-wrap align-content-center"> <a href="index.html"><img src="images/logo.png" alt="logo" width="300" /></a> </div>
+      </div>
       <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
-<h5>Follow Me</h5>
-<div class="social-links">
-        <ul class="nav nav-item">
-            <li class="footer3"><a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a><a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" width="50" height="50" /></a><a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a><a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a><a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a></li>
-          
-           
-             </ul>
+        <h5>Follow Me</h5>
+        <div class="social-links">
+          <ul class="nav footer3">
+            <li class="nav-item"> <a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a> </li>
+            <li class="nav-item"> <a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" /></a> </li>
+            <li class="nav-item"> <a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a> </li>
+            <li class="nav-item"> <a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a> </li>
+            <li class="nav-item"> <a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a> </li>
+          </ul>
+          <p>&copy; <span id="year"></span> All rights reserved.</p>
         </div>
       </div>
     </div>
-
-
-         
-             </div>
-           </div>
-         </a>
-
+  </div>
+  
+  <!-- Optional JavaScript --> 
+  <!-- jQuery first, then Bootstrap JS, ... --> 
+  
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/parallax.js"></script> 
+  <script src="js/wow.js"></script> 
+  <script src="js/main.js"></script> 
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script> 
 </footer>
-
-<!-- Optional JavaScript --> 
-<!-- jQuery first, then Bootstrap JS, ... -->
-
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/main.js"></script>
-
-</body>
+ 
+ </body>
 </html>
-

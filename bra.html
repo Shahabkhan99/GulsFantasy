@@ -1,0 +1,362 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Fitness first, the way to a healthier life starts now.</title>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="other/brasize/style.css">
+  
+</head>
+<body>
+<script async src="https://tally.so/widgets/embed.js"></script>
+<a id="scrollToTopBtn" href="#">
+  <i class="fas fa-arrow-up"></i>
+</a>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 100px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function(e) {
+    e.preventDefault(); // Prevents the <a> tag from jumping to "#"
+    
+    // Smooth scroll
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="other\brasize\assets\images\7.png">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <!-- Brand -->
+   			<a class="navbar-brand mr-auto" href="index.html">
+  			<img id="mainLogo" src="images/logo2.png" alt="FitnessFirst"/>
+			</a>   
+
+      <!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" style="background-color: #FF0077;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   			 <span class="navbar-toggler-icon"></span>
+  			</button>
+  			
+     <div class="container">
+     
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="workout.html">Workouts</a> </li>       
+          <li class="nav-item"> <a class="nav-link" href="food.html">Healthy Recipes</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
+          <li class="nav-item">  <a class="nav-link" href="#" data-tally-open="mK78dg" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="0">Contact</a>
+		  <li class="nav-item"> <a class="nav-link" href="MyCard/index.html">Follow Me</a> </li>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item"> <a class="nav-link btn btn-danger" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="fh5co-banner-text-box">
+      <div class="quote-box pl-5 pr-5 wow bounceInRight" >
+        <h2>Body Hacks<br>
+          <span></span></h2>
+      </div>
+    </div>
+      </div>
+</div>
+<p>	</p>
+<h4>Calculate Bra Size</h4>
+<div class="container">
+<div id="platform">
+    
+    <!-- BAND SIZE -->
+    <div id="inputs1">
+        <div>
+            <input type="text" class="field" id="band" value="32.28">
+            <span class="unit" id="unit1">in</span>
+        </div>
+    </div>
+
+    <!-- BUST SIZE -->
+    <div id="inputs2">
+        <div>
+            <input type="text" class="field" id="bust" value="37.40">
+            <span class="unit" id="unit2">in</span>
+        </div>
+    </div>
+
+    <!-- SWITCH: in to cm -->
+    <div id="toggleSwitch" onclick="toggleUnit()">
+        <div class="slider"></div>
+        <span class="label in-label">cm</span>
+        <span class="label cm-label">in</span>
+    </div>
+
+    <!-- CALCULATE -->
+    <button id="calcBtn" onclick="calc()">Calculate</button>
+
+    <!-- RESULT -->
+    <div id="result"></div>
+</div>
+	</div>
+
+<script src="other/brasize/script.js"></script>
+
+
+
+
+      
+      
+      
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   
+        <h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">How To Measure Underbust Size</h5>
+        	<p>1- Wrap the tape around your chest, near the band.</p>
+			<p>2- It should be snug, not too tight or loose.</p>
+			<p>Make a note of this.</p>
+     		<p>Round it off to the next even number if it’s an odd measurement or in fractions</p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+        <figure class="wow bounceInDown"> <img src="other\brasize\assets\images\band.png" alt="gym" class="img-fluid" /> </figure>
+      </div>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   
+		<h2 class="wow bounceInRight"></h2>
+        <hr />
+        <h5 class="wow bounceInLeft">How To Measure Overbust Size</h5>
+        	<p>1- Wrap the tape loosely around the fullest part of your breast. Or, measure at the nipple level.</p>
+			<p>2- Round it off to the nearest or next whole number.</p>
+			<p>3- Make a note of this final number</p>
+     		
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+        <figure class="wow bounceInDown"> <img src="other\brasize\assets\images\cup.png" alt="gym" class="img-fluid" /> </figure>
+      </div>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">	
+        	<p>With bras, there is no hard and fast rule that says one size fits all. You have to try a bra of every type before you are sure of your correct size.Based on various studies and media reports, researchers believe that roughly 70-80% of all women are unaware of their true bra size. Moreover, most women often go wrong with the band size while buying a bra. Paying attention to certain specific parameters can help you identify the right bra fit, and we are here to help you achieve just that. Here are the factors you need to keep in mind when buying a bra.</p>
+        	<p>Bra fits differ across sizes, types, and custom needs of the wearer. There might not be a radical difference in the sizes for every bra type or brand, but the subtle variation is significant enough to affect your posture and entail an uncomfortable user experience. That is why it is important to know how you may ascertain the correct bra fit for yourself, each time you go lingerie shopping. Take note of the following steps to easily determine your bra size.</p>
+        	
+        	      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+        <figure class="wow bounceInDown" style="margin-bottom: 80px;"> <img src="other\brasize\assets\images\22.png" alt="gym" class="img-fluid" /> </figure>
+        		<figure class="wow bounceInDown" style="margin-bottom: 80px;"> <img src="other\brasize\assets\images\table.png" alt="gym" class="img-fluid" /> </figure>
+      </div>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+	</div>
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">	
+       	  <h5>How To Measure A Bra Size</h5>
+       	  <p><h5>Step 1 – Measure Your Band Size (Under-Bust)</h5></p><p>Wrap a measuring tape around your chest, where your band sits, and ensure that it is snug, but not too tight or loose.Round it off to the next even number if it’s an odd measurement or in fractions. For example, if the measurement is 33 or 33.5 inches, the size will be 34. If it is 35, try both 34 and 36, depending on your cup size. Make a note of the final band measurement.</p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+        <figure class="wow bounceInDown"> <img src="other\brasize\assets\images\bandsize.jpg" alt="gym" class="img-fluid"/> </figure>
+      </div>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">	
+		  <p><h5>Step 2 – Measure Your Cup Size (Over-Bust)</h5></p><p>Wrap the tape around the fullest part of your breasts.The best way to go about it is to measure your breasts at the nipple level. This will give you an accurate measurement.Round it off to the nearest or next whole number.Make a note of this cup measurement. Now that you are aware of your band and cup measurements, you may refer to the chart below to get a general idea of your bra size</p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+        <figure class="wow bounceInDown"> <img src="other\brasize\assets\images\cupsize.jpg" alt="gym" class="img-fluid" /> </figure>
+      </div>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">	
+		<p>Simple, isn’t it? However, to get the closest-to-accurate sizing, you need to keep a few things in mind –Go braless or wear a non-padded bra when measuring your breasts. You may also wear a T-shirt. However, avoid hoodies, sweaters, jackets, or any thick layers as they may lead to incorrect measurements.
+		Be cautious with the measurements if you have sagging or larger breasts. Get a second opinion, as there have been instances where the difference in sizes was rather alarming when a measurement was taken the second time around.
+		Do not rely on a bra size chart, but get a one-time professional fitting done. Measurements are generally more accurate when you let someone else do your fitting.
+		Ensure that your bra fits snugly around your body. It should neither be too tight nor too loose.
+		The cup size also differs when you go up or down your bra size. For instance, if your size is 34B, a bigger size for you would be 36A. If you want a smaller size, go for 32C.
+		Determine your band size first and then map it to your cup size.
+		Remember that your breasts should sit approximately midway between your elbows and shoulders when you wear a bra.
+		The bra cups will do the heavy lifting, and the straps will support them. Therefore, do not forget to adjust the straps.
+		Fashion Stylist, Eleonora Fiano, further advises, “Try on different bras because bra sizing can vary between brands and styles. Pay attention to how the bra feels, the straps, the underwire, and the overall comfort and support it provides. In addition, don’t forget to re-measure yourself regularly as factors like weight loss, weight gain, and pregnancy can affect your bra size. Remember that the above steps are a general guideline for calculating your bra size. It's essential to take the time to find bras that not only match your size but also provide comfort.”
+		That said, let’s dive deeper into the parameters that constitute the perfect bra fit.</p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+       
+        <figure class="wow bounceInDown" style="margin-bottom: 80px;"> <img src="other\brasize\assets\images\8.jpg" alt="gym" class="img-fluid" /> </figure>
+        
+        <figure class="wow bounceInDown" style="margin-bottom: 80px;"> <img src="other\brasize\assets\images\10.jpg" alt="gym" class="img-fluid" /> </figure>
+        
+  
+        
+      </div>
+</figure>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">	
+		<p>Choosing the right bra is all about knowing your correct bra size for every type. While a bra cup size chart can help determine your measurements, you also need to keep a few pointers in mind to get the correct fit:
+		<h5>Straps</h5>Move your arms around like a windmill to see if your bra is riding up or your breasts are lacking enough support. If that is the case, adjust the bra straps first. If it still doesn’t fit, go for a smaller cup size.
+		<p>If your bra straps are digging into your shoulders, go for a bigger size.</p><p></p><br><p></p>
+		<h5>Cups</h5><p>Bend forward when putting on a bra. This way your breasts will fit comfortably into the cups.</p><p>Ensure the cup is taut and there is no extra room. If your breasts are spilling out of the cups, go for a bigger cup size.</p><p></p><br><p></p>
+		<h5>Band</h5><p>Hook your bra at the first eye and slide two fingers under the band. If your fingers glide comfortably, that’s the right fit for you. The bra will loosen up over time, then you can hook it on the next eye.</p><p>If your bra rides up your back and you need to adjust it and pull it continuously, you need a smaller band size.</p><p></p><br><p></p>
+	    <h5>Center</h5><p>The center part of the bra should sit perfectly on your chest. Ensure it doesn’t poke your skin.</p><p>Now that you are aware of how to choose the right bra, what are you waiting for? Just follow the steps correctly and enter the values as prompted on the calculator.</p><p>Here’s hoping our bra calculator helps you. Save the link and skim through it again before you go on a bra shopping spree.</p><p></p><br><p></p>
+      </div>
+      <div class="col-md-6">
+<figure class="wow bounceInDown">
+      <div class="col-md">
+        <figure class="wow bounceInDown"> <img src="other\brasize\assets\images\type.png" alt="gym" class="img-fluid" /> </figure>
+      </div>
+        <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/lASB_2fOcus?si=zMQixj5Pli9fkpQW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+          <iframe 
+    width="520" 
+    height="240" 
+    src="https://www.youtube.com/embed/0hHFkT949s0?si=GHl9BBCQb_4HZBfr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	<!------- footer start ------->
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer1 d-flex justify-content-center align-items-center wow bounceInLeft" data-wow-delay=".25s">
+        <div class="d-flex flex-wrap align-content-center"> <a href="index.html"><img src="images/logo.png" alt="logo" width="300" /></a> </div>
+      </div>
+      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+        <h5>Follow Me</h5>
+        <div class="social-links">
+          <ul class="nav footer3">
+            <li class="nav-item"> <a href="https://www.facebook.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a> </li>
+            <li class="nav-item"> <a href="https://www.youtube.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/you.png" alt="youtube" /></a> </li>
+            <li class="nav-item"> <a href="https://www.instagram.com/gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/in.png" alt="instagram" /></a> </li>
+            <li class="nav-item"> <a href="https://www.tiktok.com/@gulsfantasy" class="btn btn-secondary mr-1 mb-2"><img src="images/tik.png" alt="Tiktok" /></a> </li>
+            <li class="nav-item"> <a href="https://www.pinterest.com/gulnazkhan99/" class="btn btn-secondary mr-1 mb-2"><img src="images/pin.png" alt="Pinterest" /></a> </li>
+          </ul>
+          <p>&copy; <span id="year"></span> All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Optional JavaScript --> 
+  <!-- jQuery first, then Bootstrap JS, ... --> 
+  
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/parallax.js"></script> 
+  <script src="js/wow.js"></script> 
+  <script src="js/main.js"></script> 
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script> 
+</footer>
+ 
+</body>
+</html>

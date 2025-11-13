@@ -13,4 +13,4 @@ We're moving beyond the basics to build a comprehensive resource for a healthy b
 6. Resource & Learning Center: Access a wealth of articles and expert advice on topics crucial to women's health, from fitness tips and mental well-being to nutritional guidance.
 
 ![image](images/homepage.png)
-![image](images/chat.png)
+

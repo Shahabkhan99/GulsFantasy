@@ -1,0 +1,141 @@
+/* Reset & Base */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: none;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Platform – Fixed size, movable */
+#platform {
+    position: relative;
+    width: 1000px;
+    height: 563px;
+    margin: 10px auto;
+    background: url('assets/images/illustration-els.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth slide on mobile */
+}
+
+/* MOBILE: Push platform LEFT to show inputs on right */
+@media (max-width: 1100px) {
+    #platform {
+        margin-left: -600px;   /* Push left by 400px */
+        margin-right: auto;
+    }
+}
+
+/* Extra small phones: Push even more */
+@media (max-width: 680px) {
+    #platform {
+        margin-left: -570px;   /* More push for small screens */
+    }
+}
+
+
+/* Input Rows */
+#inputs1, #inputs2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d13065;
+    font-weight: 600;
+}
+#inputs1 { top: 110px; left: 790px; width: 230px; }
+#inputs2 { top: 195px; left: 790px; width: 230px; }
+
+.field {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    font-weight: 600;
+    color: #d13065;
+    width: 100px;
+    text-align: center;
+    outline: none;
+}
+.unit {
+    font-size: 18px;
+    color: #d13065;
+    margin-left: 4px;
+}
+
+/* Switch Toggle */
+#toggleSwitch {
+    position: absolute;
+    top: 255px;
+    left: 870px;
+    width: 60px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+#toggleSwitch.active {
+    background: rgba(209, 48, 101, 0.4);
+}
+.slider {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+#toggleSwitch.active .slider {
+    transform: translateX(38px);
+}
+.label {
+    position: absolute;
+	top: -4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.in-label { right: 8px; }
+.cm-label { left: 8px; opacity: 0; }
+#toggleSwitch.active .in-label { opacity: 0; }
+#toggleSwitch.active .cm-label { opacity: 1; }
+
+/* Calculate Button */
+#calcBtn {
+    position: absolute;
+    top: 300px;
+    left: 720px;
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Result */
+#result {
+    position: absolute;
+    top: 380px;
+    left: 720px;
+    width: 250px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    display: none;
+}

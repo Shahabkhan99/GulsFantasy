@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bra Size Calculator – Final</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     
+     
+
+  
+  
+</head>
+<body>
+
+<div id="platform">
+    <!-- BAND SIZE -->
+    <div id="inputs1">
+        <div>
+            <input type="text" class="field" id="band" value="32.28">
+            <span class="unit" id="unit1">in</span>
+        </div>
+    </div>
+
+    <!-- BUST SIZE -->
+    <div id="inputs2">
+        <div>
+            <input type="text" class="field" id="bust" value="37.40">
+            <span class="unit" id="unit2">in</span>
+        </div>
+    </div>
+
+    <!-- SWITCH: in to cm -->
+    <div id="toggleSwitch" onclick="toggleUnit()">
+        <div class="slider"></div>
+        <span class="label in-label">in</span>
+        <span class="label cm-label">cm</span>
+    </div>
+
+    <!-- CALCULATE -->
+    <button id="calcBtn" onclick="calc()">Calculate</button>
+
+    <!-- RESULT -->
+    <div id="result"></div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

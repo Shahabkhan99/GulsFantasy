@@ -1,0 +1,242 @@
+
+/* My classess created be applied where needed to override Bootstrap's styling*/
+
+/* Classes for fonts*/
+
+.my-heading-font {
+  font-family: 'Baumans', cursive;
+  }
+  
+  .my-plain-text-font {
+  font-family: 'Kodchasan', sans-serif !important;
+  }
+  
+  /* class for font weight bold*/
+  .my-fw-bold {
+    font-weight: bold !important;
+  }
+
+.my-text-shadow {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5) !important;
+  }
+
+.my-text-danger {
+  color: red;
+}
+
+.my-text-info {
+  color: #7b8ab8;
+}
+
+/* to be experimented with
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+
+/* classess with images used on various pages*/
+
+
+
+.background-img-tape-long {
+  background:
+  #f0f5fa
+  url('../img/tape.jpg')
+  center/cover
+  no-repeat;
+}
+
+.background-img-tape-fixed {
+  background:
+  #f0f5fa
+  url('../img/tape.jpg')
+  top/cover
+  no-repeat
+  fixed;
+}
+
+/* code copied from love-running project with Code Institute*/
+.background-tape-animated {
+  height: 600px;
+  width: 100%;
+  background:
+  #f0f5fa
+  url('../img/tape.jpg')
+  center/cover
+  no-repeat;
+  animation-name: background-zoom;
+  animation-duration: 3s; 
+  animation-fill-mode: forwards;
+}
+
+
+/* creates the level of zoom for background*/
+@keyframes background-zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.7);
+  }
+}
+
+
+
+.background-img-empty-plate {
+  background:
+  #f0f5fa
+  url('../img/tape.jpg')
+ center/cover
+  no-repeat
+  fixed;
+}
+
+/* gradinet copied from Felipe Souza Alarcon on mentoring session 10.08.2021*/
+.my-gradient-background {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
+}
+
+.my-gradient-to-left {
+  background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.90));
+}
+
+.my-white-gradient-to-left {
+  background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(255, 255, 255, 0.9));
+}
+
+.my-box-shadow {  
+    box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
+
+}
+
+.my-border-radius {
+  border-radius: 5%;
+}
+
+.my-border-radius-bigger {
+  border-radius: 30px;
+}
+
+/*My classess to be used to hide elements when the page first load*/
+
+
+.my-invisible {
+  visibility: hidden;
+  position: absolute;
+}
+
+
+
+/* styling for index html 
+need to target container by ID as javascript injects content to this container and need to maintain the same styling */
+
+#main-container {
+  color: white !important;
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
+  border-radius: 30px;
+}
+  
+
+
+#main-container h1 {
+  color: white !important;
+  font-family: 'Baumans', cursive;
+}
+
+#main-container h2 {
+  color: white !important;
+  font-family: 'Baumans', cursive;
+}
+
+
+#main-container button {
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5rem black;
+}
+
+
+
+/*
+Here starts styling for honest.html
+*/
+.my-container {
+  text-align: center;
+}
+
+.my-box {
+
+  box-shadow: 0 0 5rem black;
+  width: 100px;
+
+  margin: auto;
+ 
+}
+/* position verticaly alignedy copied from
+https://www.w3schools.com/css/css_align.asp */
+
+.center {
+  margin-top: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+.my-inline-block {
+  display: inline-block;
+}
+.my-text-center {
+  text-align: center;
+}
+
+.rounded-corners {
+  border-radius: 25px;
+}
+
+/* styling for page 404.html */
+.center-true {
+  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+
+.my-display-block {
+  display: block;
+}
+
+.my-text-decoration {
+  text-decoration: none;
+}
+
+.my-color-success {
+  color:green;
+}
+
+/* styling for calculator and results  html */
+
+#nav-container {
+  max-width: 42em;
+}
+
+/* shadow inside the box */
+
+.shadow-inside-box {
+  box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
+}
+
+
+/* id to over ride shadow put by bootstrap on body */
+
+.clear-shadow {
+  box-shadow: inset 0 0 5rem rgb(0 0 0 / 00%) !important;
+}
+
+.my-active {
+  border-bottom: .25rem solid transparent;
+  border-bottom-color: black !important;
+}
+

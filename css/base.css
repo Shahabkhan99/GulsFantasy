@@ -1,0 +1,733 @@
+body {
+  /*  margin-bottom: 50px;*/
+}
+
+.org {
+    color: #ffab40;
+}
+
+.org-text {
+    background-color: #ffab40;
+}
+
+.img-item {
+    min-width: 400px;
+    width: 100%;
+    max-height: auto;
+}
+
+.emptpush {
+    padding-bottom: 50px;
+	text-align: left;
+	padding-left: 0px;		
+}
+
+.card-info-back {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.thumbnail {
+    width: 64px;
+    height: 64px;
+    background-size: 200px 200px;
+    background-position: center;
+}
+
+.strokedat {
+    text-shadow:
+        -1px -1px 0 #546e7a69,
+        1px -1px 0 #546e7a69,
+        -1px 1px 0 #546e7a69,
+        1px 1px 0 #546e7a69;
+}
+
+/*
+==================================================
+=== "MAKE ALL FONTS WHITE" FIXES ===
+==================================================
+*/
+
+/* 1. Makes "INGREDIENTS" and "DIRECTIONS" white */
+.org {
+    color: #fff !important; /* Force override */
+}
+
+/* 2. Makes subheadings (like "Pie crust") white */
+/* and removes their orange background */
+ul.ing h4,
+ol.dir h4 {
+    color: #fff !important;
+    background-color: transparent !important; 
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 10px 0; /* Add padding but no bg */
+}
+
+/* 3. Makes "STEP 1" labels have a white border and white text */
+ol.dir > li:before {
+    content: "STEP " counter(item);
+    background-color: transparent; /* Remove orange bg */
+    color: #fff; /* White text */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid #fff; /* Add white border */
+}
+
+/* 4. Ensures the list text itself is white */
+ul.ing > li,
+ol.dir > li {
+    color: #fff;
+}
+
+/* --- Crossfade Background Images --- */
+.crossfade {
+  position: absolute; /* Or 'fixed' depending on effect */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  z-index: -1; /* Puts it behind your content */
+}
+
+.crossfade figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0; /* All images hidden by default */
+  animation: image-fade 30s infinite; /* 60s total, loops */
+}
+
+.crossfade>figure:nth-child(1) {
+    background-image: url('../other/keto/KetoFood/img/8.jpg');
+}
+
+.crossfade>figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url('../other/keto/KetoFood/img/2.jpg');
+}
+
+.crossfade>figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('../other/keto/KetoFood/img/3.jpg');
+}
+
+.crossfade>figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url('../other/keto/KetoFood/img/4.jpg');
+}
+
+.crossfade>figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url('../other/keto/KetoFood/img//5.jpg');
+}
+
+/* --- The Animation that Fades Them --- */
+@keyframes image-fade {
+  0% {
+    opacity: 0;
+  }
+  10% { /* Fade in */
+    opacity: 1;
+  }
+  20% { /* Hold */
+    opacity: 1;
+  }
+  30% { /* Fade out */
+    opacity: 0;
+  }
+  100% { /* Remainder of cycle */
+    opacity: 0;
+  }
+}
+
+.btn-box-pad {
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.overwirate-input:focus:not(.browser-default) {
+    background-color: #546e7a !important;
+    color: white !important;
+    -webkit-box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2) !important;
+    border-bottom: medium solid white !important;
+}
+
+.topFilter.row.blue-grey.darken-1 {
+    padding-bottom: 10px;
+}
+
+form.datSerch {
+    padding-top: 8px;
+}
+
+.bruhstaythere {
+    display: block !important;
+}
+
+.rinactive {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+
+/* list with numbers config */
+
+ol {
+    margin: 0 0 1.5em;
+    padding: 0 0 0 5em;
+    counter-reset: item;
+	text-align: left;
+}
+
+ol>li {
+    margin: 20px 8px 0px 0px;
+    padding: 0 0 0 0;
+    text-indent: -3em;
+    list-style-type: none;
+    counter-increment: item;
+	text-align: left;
+}
+
+ol>li:before {
+    display: block;
+    width: 2em;
+    padding-right: 1px;
+    color: #fff;
+    border-color: #ffab40;
+    border-style: solid;
+    background-color: #ffab40;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: left;
+    content: "STEP "counter(item) ".";
+}
+
+.justFlex {
+    display: flex !important;
+	
+}
+
+.circular--portrait {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-self: baseline;
+    overflow: hidden;
+    border-radius: 8%;
+}
+
+.circular--portrait img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 2%;
+}
+
+h1.brand-logo.center.white-text {
+    font-size: 4em;
+}
+
+.grid-example.col.s12.blue-grey.darken-1.z-depth-2 {
+    padding: 35px;
+}
+
+.Rinflex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.Rinflex-item {
+    justify-content: flex-end;
+    margin: 3px;
+    padding: 10px 0 0 10px;
+
+}
+
+.Rininfo-container {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Rinresponsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+h2.center.white-text {
+    font-weight: 800;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*
+  This class makes your button bigger and adds the 3D effect.
+*/
+.btn-3d {
+  /* --- 1. "Bigger" --- */
+  /* These are larger than Bootstrap's default "btn-lg" */
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  /* --- 2. "3D" --- */
+  position: relative;
+  top: 0;
+  
+  /* This adds the 5px "bottom edge" in a darker red */
+  box-shadow: 0 0px 0 #c82333; 
+
+  /* Smooth transition for the press */
+  transition: all 0.1s ease-out;
+}
+
+/* This is the "push down" effect on click */
+.btn-3d:active {
+  top: 5px; /* Moves the button down 5px */
+  box-shadow: none; /* Removes the bottom edge */
+}
+
+/* This rule makes the icon bigger and aligns it */
+.btn-3d .material-icons {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 1.5rem; /* Make icon bigger too */
+}
+/*============================================================*/
+
+
+/* My classess created be applied where needed to override Bootstrap's styling*/
+
+/* Classes for fonts*/
+
+.my-heading-font {
+  font-family: 'Baumans', cursive;
+	color: white;
+  }
+  
+  .my-plain-text-font {
+  font-family: 'Kodchasan', sans-serif !important;
+	  color: white;
+  }
+  
+  /* class for font weight bold*/
+  .my-fw-bold {
+    font-weight: bold !important;
+  }
+
+.my-text-shadow {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5) !important;
+  }
+
+.my-text-danger {
+  color: red;
+}
+
+.my-text-info {
+  color: white;
+}
+
+
+
+.background-img-tape-long {
+  background:
+  #f0f5fa
+  url('../images/siora-photography-cixohzDpNIo-unsplash\ \(1\).jpg')
+  center/cover
+  no-repeat;
+}
+
+.background-img-tape-fixed {
+  background:
+  #f0f5fa
+  url('../images/siora-photography-cixohzDpNIo-unsplash\ \(1\).jpg')
+  top/cover
+  no-repeat
+  fixed;
+}
+
+/* code copied from love-running project with Code Institute*/
+.background-tape-animated {
+  height: 600px;
+  width: 100%;
+  background:
+  #f0f5fa
+  url('../images/siora-photography-cixohzDpNIo-unsplash\ \(1\).jpg')
+  center/cover
+  no-repeat;
+  animation-name: background-zoom;
+  animation-duration: 3s; 
+  animation-fill-mode: forwards;
+}
+/*
+==================================================
+=== BOOTSTRAP 5 ".BTN-GROUP" SHAPE & SIZE FIX ===
+==================================================
+*/
+
+/* This creates the rounded "pill" shape for the group */
+.btn-group {
+  border-radius: .25rem; /* This is the pill shape */
+}
+
+/* This targets the buttons inside the calculator's group */
+.btn-group > .btn-outline-success {
+  position: relative;
+  flex: 1 1 auto;
+  
+  /* These are the size/padding styles */
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  
+  /* This is the border color */
+  border-color: #198754;
+  color: #198754;
+}
+
+/* Makes the LEFT button have rounded corners on the left */
+.btn-group > .btn:first-child {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+/* Makes the RIGHT button have rounded corners on the right */
+.btn-group > .btn:last-child {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+/* Prevents a double border in the middle */
+.btn-group > .btn:not(:last-child) {
+  border-right: none;
+}
+
+/* creates the level of zoom for background*/
+@keyframes background-zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.7);
+  }
+}
+
+
+
+.background-img-empty-plate {
+  background: #f0f5fa
+  /*url('../images/mariana-beltran-Z2zmQlZL_3U-unsplash\ \(1\).jpg')
+ center/cover
+  no-repeat
+  fixed;*/
+}
+
+/* gradinet copied from Felipe Souza Alarcon on mentoring session 10.08.2021*/
+.my-gradient-background {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
+}
+
+.my-gradient-to-left {
+  background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.90));
+}
+
+.my-white-gradient-to-left {
+  background: linear-gradient(to left, #770037, #B70055);
+}
+
+.my-box-shadow {  
+    box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
+
+}
+
+.my-border-radius {
+  border-radius: 5%;
+}
+
+.my-border-radius-bigger {
+  border-radius: 30px;
+}
+
+/*My classess to be used to hide elements when the page first load*/
+
+
+.my-invisible {
+  visibility: hidden;
+  position: absolute;
+}
+
+
+
+/* styling for index html 
+need to target container by ID as javascript injects content to this container and need to maintain the same styling */
+
+#main-container {
+  color: white !important;
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
+  border-radius: 30px;
+}
+  
+
+
+#main-container h1 {
+  color: white !important;
+  font-family: 'Baumans', cursive;
+}
+
+#main-container h2 {
+  color: white !important;
+  font-family: 'Baumans', cursive;
+}
+
+
+#main-container button {
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5rem black;
+}
+
+
+
+/*
+Here starts styling for honest.html
+*/
+.my-container {
+  text-align: center;
+}
+
+.my-box {
+
+  box-shadow: 0 0 5rem black;
+  width: 100px;
+
+  margin: auto;
+ 
+}
+/* position verticaly alignedy copied from
+https://www.w3schools.com/css/css_align.asp */
+
+.center {
+  margin-top: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+.my-inline-block {
+  display: inline-block;
+}
+.my-text-center {
+  text-align: center;
+}
+
+.rounded-corners {
+  border-radius: 25px;
+}
+
+/* styling for page 404.html */
+.center-true {
+  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+
+.my-display-block {
+  display: block;
+}
+
+.my-text-decoration {
+  text-decoration: none;
+}
+
+.my-color-success {
+  color:green;
+}
+
+/* styling for calculator and results  html */
+
+#nav-container {
+  max-width: 42em;
+}
+
+/* shadow inside the box */
+
+.shadow-inside-box {
+  box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
+}
+
+
+/* id to over ride shadow put by bootstrap on body */
+
+.clear-shadow {
+  box-shadow: inset 0 0 5rem rgb(0 0 0 / 00%) !important;
+}
+
+.my-active {
+  border-bottom: .25rem solid transparent;
+  border-bottom-color: black !important;
+}
+/*
+==================================================
+=== BOOTSTRAP 5 BUTTON FIX (for Bootstrap 4) ===
+==================================================
+*/
+
+/* Hides the original radio button */
+.btn-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+/* Styles the group shape */
+.btn-group {
+  border-radius: 0;
+}
+
+/* Styles the buttons inside the group */
+.btn-group > .btn-outline-success {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem .4rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-color: #99FF00;
+  color: #fff;
+}
+
+/* Styles the button when it's CHECKED */
+.btn-check:checked + .btn-outline-success {
+  color: #fff;
+  background-color: #FF6E00;
+  border-color: #99ff00;
+}
+
+/* Adds the blue "glow" ring on focus */
+.btn-check:active + .btn-outline-success,
+.btn-check:focus + .btn-outline-success {
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5);
+}
+
+/* Rounds the left button */
+.btn-group > .btn:first-child {
+  border-top-left-radius: 5.25rem !important;
+  border-bottom-left-radius: 5.25rem !important;
+}
+
+/* Rounds the left button */
+.btn-group > .btn:nth-of-type(1) {
+  border-top-left-radius: 5.25rem !important;
+  border-bottom-left-radius: 5.25rem !important;
+}
+
+/* You should also update your last-child rule to match */
+.btn-group > .btn:nth-of-type(2) {
+  border-top-right-radius: 5.25rem !important;
+  border-bottom-right-radius: 5.25rem !important;
+}
+
+/*-------------------*/
+/*form fields*/
+
+.responsive-form-container {
+    /* --- Resizing Logic --- */
+    width: 100%;        /* Makes the form 100% wide on small (mobile) screens */
+    max-width: 600px;   /* Sets the maximum width on large (desktop) screens.
+                           600px is a good, readable width for a form. */
+
+    /* --- Centering Logic --- */
+    margin-left: auto;  /* These two lines center the container */
+    margin-right: auto; /* when the screen is wider than max-width */
+
+    /* --- Fixes Padding --- */
+    box-sizing: border-box; /* This is crucial. It tells the browser to include
+                               your .p-3 padding *inside* the width, not add
+                               it on the outside. */
+}
+
+.mb-3{
+	padding-top: 15px; 
+	padding-bottom: 0px; 
+}
+
+.mb-5{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+
+
+
+@media (min-width: 858px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 702px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media (mix-width: 724px) {
+    html {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 623px) {
+    html {
+        font-size: 15px !important;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (mix-width: 1281px) {
+    html {
+        font-size: 22px !important;
+    }
+
+    .circular--portrait {
+        width: 30%;
+    }
+}
+

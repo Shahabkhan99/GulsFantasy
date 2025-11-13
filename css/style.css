@@ -1,5 +1,3 @@
-
-
 /*#ff0077*/
 body {
   font-family: 'Lato', sans-serif;
@@ -7,6 +5,20 @@ body {
   overflow-y: scroll;
   background-color: #000;
 }
+
+.navbar-brand {
+  position: center;  /* Fixes the element relative to the browser window */
+  top: 0;           /* Pins it to the top edge */
+  left: 0;          /* Pins it to the left edge */
+  z-index: 100px;    /* Ensures it stacks 'above all' other content */
+}
+#mainLogo {
+  width: 380px;
+  height: 180px;   /* Recommended: Keeps the logo from stretching */
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 body .bg-img {
   background-repeat: no-repeat;
   background-position: center;
@@ -19,19 +31,21 @@ body nav .navbar-nav a {
   font-size: 18px;
   text-transform: uppercase;
   color: #fff !important;
-  background: rgba(199, 21, 133, 0.1); /* semi-transparent blue */ !important;
+  background: rgba(199, 21, 133, 0.1); /* semi-transparent blue !important;*/
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
 body nav .navbar-nav a:hover {
-  background: rgba(199, 21, 133, 0.6); /* semi-transparent blue */ !important;
+  background: rgba(199, 21, 133, 0.6); /* semi-transparent blue  !important; */
 }
 body nav .navbar-nav .btn-danger {
   background: transparent;
   border-color: transparent;
   border-radius: 0;
+  align-content: center;
+  padding: auto;
 }
 body nav .navbar-nav .btn-danger:hover {
   background: #000;
@@ -73,12 +87,15 @@ a, a:hover {
 .fh5co-banner-text-box {
   position: relative;
   max-height: 160px;
+  max-width: 100%;
   display: inline-block;
   margin-top: 300px;
+  color: white;
 }
 .fh5co-banner-text-box .quote-box {
-  max-width: auto;
-  padding: 15px 50px 30px 20px;
+  max-width: 100%;
+  padding: 15px 50px 80px 10px;
+  
 }
 .fh5co-banner-text-box .quote-box h2 {
   font-family: 'Lato', sans-serif;
@@ -89,12 +106,13 @@ a, a:hover {
 .fh5co-banner-text-box .quote-box h2 span {
   color: #FF0077;
   font-size: 35px;
+	
 }
 .fh5co-banner-text-box .quote-box::before {
   content: "";
   position: absolute;
   height: 38px;
-  width: 38px;
+  width: 30px;
   left: 0;
   top: 0;
   background: url("../images/right-quote.png");
@@ -113,9 +131,11 @@ a, a:hover {
 .fh5co-banner-text-box a {
   color: #fff;
   background: rgba(199, 21, 133, 0.6); /* semi-transparent blue */
-  border: 1px solid #99FF00;
+  border: 2px solid #99FF00;
   border-radius: 0;
-  min-width: 150px;
+  min-width: 400px;
+  min-height: 50px;	
+  font-size: 25px;
   backdrop-filter: blur(10px); /* makes background blurry */
   -webkit-backdrop-filter: blur(10px); /* for Safari support */
 }
@@ -130,8 +150,8 @@ a, a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  padding: 50px 0;
-  padding-top: 30px;
+  padding: 0px 0;
+  padding-top: 90px;
 }
 .fh5co-network figure, .fh5co-about-us figure {
   margin-top: -70px !important;
@@ -147,6 +167,8 @@ a, a:hover {
   color: #282828;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .fh5co-about-us hr {
   display: block; /* Make sure it's a block */
@@ -190,7 +212,7 @@ a, a:hover {
 
 .fh5co-content-box {
   background: #464646;
-  padding-bottom: 100px;
+  padding-bottom: auto;
 }
 .fh5co-content-box .pr-0 img {
   margin-top: -128px;
@@ -205,8 +227,9 @@ a, a:hover {
 }
 .fh5co-content-box .trainers {
   position: relative;
-  padding: 50px 0;
-  margin: 70px 0;
+  padding: auto;
+  margin: auto;
+  height: auto;
   background: url("../images/gym2.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -218,7 +241,12 @@ a, a:hover {
 .fh5co-content-box .trainers .card {
   border: none;
   background: transparent;
+
+  display: flex;
+  flex-direction: column;
 }
+
+
 .fh5co-content-box .trainers .card img {
   max-width: 250px;
   margin: 0 auto;
@@ -226,11 +254,12 @@ a, a:hover {
 }
 .fh5co-content-box .trainers .card .card-body {
   background: #ccc;
-  border-radius: 15px;
-  padding: 30px 20px;
-  margin-top: 30px;
-  padding-bottom: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 180px;   /* ✅ smaller box height */
+  overflow: hidden;    /* keeps content inside */
 }
+
 .fh5co-content-box .trainers .card .card-body::before {
   content: "";
   position: absolute;
@@ -240,13 +269,16 @@ a, a:hover {
   text-align: center;
   margin-left: -15px;
 }
+
+
 .fh5co-content-box .trainers .quote-box2 {
   color: #fff;
   max-width: 250px;
   position: relative;
   text-align: center;
   margin: auto;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .fh5co-content-box .trainers .quote-box2::before {
   content: "";
@@ -276,10 +308,10 @@ a, a:hover {
   position: absolute;
   border: 5px solid #99FF00;
   width: 100%;
-  top: -10px;
+  top: -1px;
 }
 .fh5co-content-box .trainers::before {
-  bottom: -10px;
+  bottom: 0px;
   top: auto;
 }
 .fh5co-content-box .gallery .card {
@@ -288,17 +320,19 @@ a, a:hover {
 }
 .fh5co-content-box .gallery .card img {
   border-radius: 0;
-  max-height: 580px;
+  max-height: auto;
 }
 .fh5co-content-box .gallery .card .card-body {
   background: #ff0077;
+	  height: auto;
+	  width: auto;
 }
 .fh5co-content-box .gallery .card .card-body h4 {
   color: #fff;
 }
 .fh5co-content-box .gallery .card .card-body p {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: auto;
 }
 
 footer {
@@ -404,13 +438,13 @@ footer::before {
     margin-top: -78px;
   }
   .fh5co-content-box .card-img-overlay {
-    top: 20%;
+    top: 50%;
   }
 }
 @media (max-width: 767px) {
   body nav .navbar-nav {
     margin-left: 0 !important;
-    max-width: 50px;
+    max-width: 1000px;
   }
 
   .fh5co-network figure, .fh5co-about-us figure {
@@ -448,7 +482,7 @@ footer::before {
   transform: translate(-50%,-50%);
   top:90%;
   right:95%;
-  position: fixed; 
+  /*position: fixed; */
 
 }
 .notifications
@@ -461,7 +495,7 @@ footer::before {
   text-align: center;
   top:90%;
   right:95%;
-  left:90%
+  left:90%;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
 
 }
@@ -517,19 +551,29 @@ section#demo {
   left: 0;
   width: 100%;
   
-  
 }
+
+
+
 .card {
-     box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.035);
-    padding: 7px 15px;
-    
-    
+    height: 700px;
+    overflow: hidden;
 }
+
+.card-img-top {
+    width: 100%;  /* Make image fill the card's width */
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* This is the "stretch fix" */
+}
+
+
+
 option {
      padding: 50%;
     
 }
 .box .vertical-align
+
 {
   visibility:visible;
 }
@@ -674,13 +718,17 @@ option {
     width: 70%;
   }
 }
-
-
-
-
-
-
-
-
-
-
+p + p {
+  margin: -10px;
+  padding: 0px;
+  text-align: left;	
+  padding-left: 20px;
+  padding-right: 20px;
+}
+br {
+  content: ""; /* Prevents line break */
+  display: inline; /* Makes it behave like an inline element */
+}
+br:after {
+  content: " "; /* Adds a space after the modified br */
+}

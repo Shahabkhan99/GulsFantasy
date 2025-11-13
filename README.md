@@ -1,6 +1,6 @@
 # Fitness-Forward: Empowering Women's Wellness
 Welcome to the official project outline for our new women's health and fitness platform.
-Our mission is to create a supportive, empowering and informative space for women to achieve their wellness goals, 
+Our mission is to create a supportive, empowering & informative space for women to achieve their wellness goals, 
 whatever they may be. 
 We're moving beyond the basics to build a comprehensive resource for a healthy body and mind.
 

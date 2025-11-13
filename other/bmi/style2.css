@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.container1 {
+	/* Your existing styles */
+	background: rgba(255, 255, 255, 0.1);
+	padding: 40px 50px;
+	border-radius: 25px;
+	backdrop-filter: blur(12px);
+	box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	width: 510px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	
+	margin: 20px auto;
+	
+	/* --- ADD THESE LINES TO CENTER --- 
+	position: absolute;
+	top: 1197px;
+	left: 864px;
+	transform: translate(-50%, -50%);  */
+}
+
+.container1:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+     margin-bottom: 25px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255,255,255,0.15);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+input:focus {
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0px 0px 12px rgba(255,255,255,0.5);
+}
+
+button1 {
+    width: auto;
+    padding: 14px 80px 14px 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: background 0.4s ease, transform 0.2s ease;
+}
+
+button1:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+  transform: scale(1.05);
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    background:rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  min-height: 40px;
+  transition: all 0.3s ease;
+}
+
+#result.show {
+    animation: myAnimation 0.6s ease-in-out;
+}
+
+@keyframes myAnimation {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

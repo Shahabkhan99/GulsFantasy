@@ -1,4 +1,87 @@
-body {
+/*
+==================================================
+=== NEW RECIPE CARD STYLES ===
+==================================================
+*/
+
+/* This targets the grid columns created by meta-data.js (e.g., "col s12 m6") */
+/* and makes them work inside your Bootstrap "row" */
+#Rinformulaire > [class*="col "] {
+    margin-bottom: 30px; /* Add spacing between card rows */
+}
+
+/* This replicates the 'm6' (medium-6) from Materialize */
+/* It creates 2 columns on tablets and desktops */
+@media (min-width: 768px) {
+    #Rinformulaire > .m6 {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* This is the main card container */
+.card {
+    background-color: #770033; /* Dark brown background from image */
+    border-radius: 4px; 
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* This is the image container */
+.card .card-image {
+    position: relative; /* Needed for the title overlay */
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* This is the title overlay */
+.card .card-image .card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    padding: 10px 15px;
+    background-color: #f5a623; /* Orange color from image */
+    color: #333; /* Dark text for title */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* This holds the text description */
+.card .card-content {
+    padding: 20px;
+    color: #f5f5f5; /* Light text color */
+    flex-grow: 1; /* Makes content fill available space */
+}
+
+/* This holds the "VIEW" link */
+.card .card-action {
+    padding: 20px;
+    border-top: 1px solid #755448; /* Slightly lighter brown border */
+}
+
+.card .card-action a {
+    color: #fff !important; /* Light orange color for link */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Style the icon shown in the image */
+.card .card-action a .material-icons {
+    color: #fff !important; /* Same color for icon */
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 5px;
+}body {
   /*  margin-bottom: 50px;*/
 }
 
@@ -17,9 +100,7 @@ body {
 }
 
 .emptpush {
-    padding-bottom: 50px;
-	text-align: left;
-	padding-left: 0px;		
+    padding-bottom: 30px
 }
 
 .card-info-back {
@@ -39,47 +120,6 @@ body {
         1px -1px 0 #546e7a69,
         -1px 1px 0 #546e7a69,
         1px 1px 0 #546e7a69;
-}
-
-/*
-==================================================
-=== "MAKE ALL FONTS WHITE" FIXES ===
-==================================================
-*/
-
-/* 1. Makes "INGREDIENTS" and "DIRECTIONS" white */
-.org {
-    color: #fff !important; /* Force override */
-}
-
-/* 2. Makes subheadings (like "Pie crust") white */
-/* and removes their orange background */
-ul.ing h4,
-ol.dir h4 {
-    color: #fff !important;
-    background-color: transparent !important; 
-    font-weight: bold;
-    font-size: 1.25rem;
-    padding: 10px 0; /* Add padding but no bg */
-}
-
-/* 3. Makes "STEP 1" labels have a white border and white text */
-ol.dir > li:before {
-    content: "STEP " counter(item);
-    background-color: transparent; /* Remove orange bg */
-    color: #fff; /* White text */
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin-right: 10px;
-    display: inline-block;
-    border: 2px solid #fff; /* Add white border */
-}
-
-/* 4. Ensures the list text itself is white */
-ul.ing > li,
-ol.dir > li {
-    color: #fff;
 }
 
 /* --- Crossfade Background Images --- */
@@ -177,41 +217,10 @@ form.datSerch {
 }
 
 
-/* list with numbers config */
 
-ol {
-    margin: 0 0 1.5em;
-    padding: 0 0 0 5em;
-    counter-reset: item;
-	text-align: left;
-}
-
-ol>li {
-    margin: 20px 8px 0px 0px;
-    padding: 0 0 0 0;
-    text-indent: -3em;
-    list-style-type: none;
-    counter-increment: item;
-	text-align: left;
-}
-
-ol>li:before {
-    display: block;
-    width: 2em;
-    padding-right: 1px;
-    color: #fff;
-    border-color: #ffab40;
-    border-style: solid;
-    background-color: #ffab40;
-    margin-right: 10px;
-    font-weight: bold;
-    text-align: left;
-    content: "STEP "counter(item) ".";
-}
 
 .justFlex {
     display: flex !important;
-	
 }
 
 .circular--portrait {
@@ -281,410 +290,24 @@ h2.center.white-text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/*
-  This class makes your button bigger and adds the 3D effect.
-*/
-.btn-3d {
-  /* --- 1. "Bigger" --- */
-  /* These are larger than Bootstrap's default "btn-lg" */
-  padding: 1rem 1.75rem;
-  font-size: 1.25rem;
-  font-weight: bold;
+.recipe-filter-btn {
+    background-color: #d81b60;
+    color: white !important; 
+    margin: 5px;
+    border-radius: 50px !important; 
+    border: none; /* Remove the old 1px border */
 
-  /* --- 2. "3D" --- */
-  position: relative;
-  top: 0;
-  
-  /* This adds the 5px "bottom edge" in a darker red */
-  box-shadow: 0 0px 0 #c82333; 
-
-  /* Smooth transition for the press */
-  transition: all 0.1s ease-out;
+    /* --- START 3D EFFECT --- */
+    position: relative; /* Needed for the 'active' state */
+    top: 0; /* Initial position */
+    
+    /* Creates the 4px "bottom edge" */
+    /* This is just a darker shade of your pink */
+    box-shadow: 0 4px 0 #ab154e; 
+    
+    /* Smooth transition for the press */
+    transition: all 0.1s ease-out;
 }
-
-/* This is the "push down" effect on click */
-.btn-3d:active {
-  top: 5px; /* Moves the button down 5px */
-  box-shadow: none; /* Removes the bottom edge */
-}
-
-/* This rule makes the icon bigger and aligns it */
-.btn-3d .material-icons {
-  vertical-align: middle;
-  margin-right: 5px;
-  font-size: 1.5rem; /* Make icon bigger too */
-}
-/*============================================================*/
-
-
-/* My classess created be applied where needed to override Bootstrap's styling*/
-
-/* Classes for fonts*/
-
-.my-heading-font {
-  font-family: 'Baumans', cursive;
-	color: white;
-  }
-  
-  .my-plain-text-font {
-  font-family: 'Kodchasan', sans-serif !important;
-	  color: white;
-  }
-  
-  /* class for font weight bold*/
-  .my-fw-bold {
-    font-weight: bold !important;
-  }
-
-.my-text-shadow {
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5) !important;
-  }
-
-.my-text-danger {
-  color: red;
-}
-
-.my-text-info {
-  color: white;
-}
-
-
-
-.background-img-tape-long {
-  background:
-  #f0f5fa
-  url('../images/siora-photography-cixohzDpNIo-unsplash\ \(1\).jpg')
-  center/cover
-  no-repeat;
-}
-
-.background-img-tape-fixed {
-  background:
-  #f0f5fa
-  url('../images/siora-photography-cixohzDpNIo-unsplash\ \(1\).jpg')
-  top/cover
-  no-repeat
-  fixed;
-}
-
-/* code copied from love-running project with Code Institute*/
-.background-tape-animated {
-  height: 600px;
-  width: 100%;
-  background:
-  #f0f5fa
-  url('../images/siora-photography-cixohzDpNIo-unsplash\ \(1\).jpg')
-  center/cover
-  no-repeat;
-  animation-name: background-zoom;
-  animation-duration: 3s; 
-  animation-fill-mode: forwards;
-}
-/*
-==================================================
-=== BOOTSTRAP 5 ".BTN-GROUP" SHAPE & SIZE FIX ===
-==================================================
-*/
-
-/* This creates the rounded "pill" shape for the group */
-.btn-group {
-  border-radius: .25rem; /* This is the pill shape */
-}
-
-/* This targets the buttons inside the calculator's group */
-.btn-group > .btn-outline-success {
-  position: relative;
-  flex: 1 1 auto;
-  
-  /* These are the size/padding styles */
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  
-  /* This is the border color */
-  border-color: #198754;
-  color: #198754;
-}
-
-/* Makes the LEFT button have rounded corners on the left */
-.btn-group > .btn:first-child {
-  border-top-left-radius: .25rem;
-  border-bottom-left-radius: .25rem;
-}
-
-/* Makes the RIGHT button have rounded corners on the right */
-.btn-group > .btn:last-child {
-  border-top-right-radius: .25rem;
-  border-bottom-right-radius: .25rem;
-}
-
-/* Prevents a double border in the middle */
-.btn-group > .btn:not(:last-child) {
-  border-right: none;
-}
-
-/* creates the level of zoom for background*/
-@keyframes background-zoom {
-  from{
-      transform: scale(1);
-  }
-  to{
-      transform: scale(1.7);
-  }
-}
-
-
-
-.background-img-empty-plate {
-  background: #f0f5fa
-  /*url('../images/mariana-beltran-Z2zmQlZL_3U-unsplash\ \(1\).jpg')
- center/cover
-  no-repeat
-  fixed;*/
-}
-
-/* gradinet copied from Felipe Souza Alarcon on mentoring session 10.08.2021*/
-.my-gradient-background {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
-}
-
-.my-gradient-to-left {
-  background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.90));
-}
-
-.my-white-gradient-to-left {
-  background: linear-gradient(to left, #770037, #B70055);
-}
-
-.my-box-shadow {  
-    box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
-
-}
-
-.my-border-radius {
-  border-radius: 5%;
-}
-
-.my-border-radius-bigger {
-  border-radius: 30px;
-}
-
-/*My classess to be used to hide elements when the page first load*/
-
-
-.my-invisible {
-  visibility: hidden;
-  position: absolute;
-}
-
-
-
-/* styling for index html 
-need to target container by ID as javascript injects content to this container and need to maintain the same styling */
-
-#main-container {
-  color: white !important;
-  font-weight: bold;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
-  border-radius: 30px;
-}
-  
-
-
-#main-container h1 {
-  color: white !important;
-  font-family: 'Baumans', cursive;
-}
-
-#main-container h2 {
-  color: white !important;
-  font-family: 'Baumans', cursive;
-}
-
-
-#main-container button {
-  color: black;
-  background-color: whitesmoke;
-  box-shadow: 0 0 5rem black;
-}
-
-
-
-/*
-Here starts styling for honest.html
-*/
-.my-container {
-  text-align: center;
-}
-
-.my-box {
-
-  box-shadow: 0 0 5rem black;
-  width: 100px;
-
-  margin: auto;
- 
-}
-/* position verticaly alignedy copied from
-https://www.w3schools.com/css/css_align.asp */
-
-.center {
-  margin-top: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-
-}
-
-.my-inline-block {
-  display: inline-block;
-}
-.my-text-center {
-  text-align: center;
-}
-
-.rounded-corners {
-  border-radius: 25px;
-}
-
-/* styling for page 404.html */
-.center-true {
-  margin-top: 25vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-
-}
-
-
-.my-display-block {
-  display: block;
-}
-
-.my-text-decoration {
-  text-decoration: none;
-}
-
-.my-color-success {
-  color:green;
-}
-
-/* styling for calculator and results  html */
-
-#nav-container {
-  max-width: 42em;
-}
-
-/* shadow inside the box */
-
-.shadow-inside-box {
-  box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
-}
-
-
-/* id to over ride shadow put by bootstrap on body */
-
-.clear-shadow {
-  box-shadow: inset 0 0 5rem rgb(0 0 0 / 00%) !important;
-}
-
-.my-active {
-  border-bottom: .25rem solid transparent;
-  border-bottom-color: black !important;
-}
-/*
-==================================================
-=== BOOTSTRAP 5 BUTTON FIX (for Bootstrap 4) ===
-==================================================
-*/
-
-/* Hides the original radio button */
-.btn-check {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  pointer-events: none;
-}
-
-/* Styles the group shape */
-.btn-group {
-  border-radius: 0;
-}
-
-/* Styles the buttons inside the group */
-.btn-group > .btn-outline-success {
-  position: relative;
-  flex: 1 1 auto;
-  padding: 1rem .4rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-color: #99FF00;
-  color: #fff;
-}
-
-/* Styles the button when it's CHECKED */
-.btn-check:checked + .btn-outline-success {
-  color: #fff;
-  background-color: #FF6E00;
-  border-color: #99ff00;
-}
-
-/* Adds the blue "glow" ring on focus */
-.btn-check:active + .btn-outline-success,
-.btn-check:focus + .btn-outline-success {
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5);
-}
-
-/* Rounds the left button */
-.btn-group > .btn:first-child {
-  border-top-left-radius: 5.25rem !important;
-  border-bottom-left-radius: 5.25rem !important;
-}
-
-/* Rounds the left button */
-.btn-group > .btn:nth-of-type(1) {
-  border-top-left-radius: 5.25rem !important;
-  border-bottom-left-radius: 5.25rem !important;
-}
-
-/* You should also update your last-child rule to match */
-.btn-group > .btn:nth-of-type(2) {
-  border-top-right-radius: 5.25rem !important;
-  border-bottom-right-radius: 5.25rem !important;
-}
-
-/*-------------------*/
-/*form fields*/
-
-.responsive-form-container {
-    /* --- Resizing Logic --- */
-    width: 100%;        /* Makes the form 100% wide on small (mobile) screens */
-    max-width: 600px;   /* Sets the maximum width on large (desktop) screens.
-                           600px is a good, readable width for a form. */
-
-    /* --- Centering Logic --- */
-    margin-left: auto;  /* These two lines center the container */
-    margin-right: auto; /* when the screen is wider than max-width */
-
-    /* --- Fixes Padding --- */
-    box-sizing: border-box; /* This is crucial. It tells the browser to include
-                               your .p-3 padding *inside* the width, not add
-                               it on the outside. */
-}
-
-.mb-3{
-	padding-top: 15px; 
-	padding-bottom: 0px; 
-}
-
-.mb-5{
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-
-
-
 
 
 @media (min-width: 858px) {
@@ -730,4 +353,3 @@ https://www.w3schools.com/css/css_align.asp */
         width: 30%;
     }
 }
-

@@ -217,35 +217,7 @@ form.datSerch {
 }
 
 
-/* list with numbers config */
 
-ol {
-    margin: 0 0 1.5em;
-    padding: 0;
-    counter-reset: item;
-}
-
-ol>li {
-    margin: 20px 8px 0px 0px;
-    padding: 0 0 0 1em;
-    text-indent: -3em;
-    list-style-type: none;
-    counter-increment: item;
-}
-
-ol>li:before {
-    display: block;
-    width: 2em;
-    padding-right: 1px;
-    color: #fff;
-    border-color: #ffab40;
-    border-style: solid;
-    background-color: #ffab40;
-    margin-right: 10px;
-    font-weight: bold;
-    text-align: right;
-    content: "STEP "counter(item) ".";
-}
 
 .justFlex {
     display: flex !important;

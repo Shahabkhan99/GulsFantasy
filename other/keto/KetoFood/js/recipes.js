@@ -8,6 +8,7 @@ let reci = {
     url: "https://draxe.com/recipes/keto-bread-recipe/",
     image: "https://i.imgur.com/5kb76hR.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1½ cups almond flour",
       "6 egg whites (NOTE: this recipe does not call for the yolks)",
       "¼ teaspoon cream of tartar",
@@ -17,6 +18,7 @@ let reci = {
       "2 tablespoons coconut flour",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 375 F.",
       "Add the cream of tartar to the egg white mixture and, using a hand mixer, whip the eggs until soft peaks are formed.",
       "Add the almond flour, butter, baking soda, apple cider vinegar and coconut flour to a food processor, blending until well-incorporated.",
@@ -30,12 +32,14 @@ let reci = {
     url: "https://www.kochtrotz.de/rezepte/leckere-kohlrabi-pommes-aus-dem-backofen-low-carb-und-fettarm/",
     image: "https://i.imgur.com/aWsHsEv.jpg",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "2 big Kohlrabi",
       "1 Tsp mild paprika spice",
       "1.5 Tsp Oil",
       "Pinch of salt",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 250 ° C.",
       "Peel kohlrabi and cut into french fries or take them with a french fry cutter.",
       "Put the kohlrabi fries in portions in the dish towel / wrap and rub dry.",
@@ -52,6 +56,7 @@ let reci = {
     url: "https://kirbiecravings.com/cauliflower-crusted-grilled-cheese-sandwiches/",
     image: "https://i.imgur.com/v6FaB07.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 medium head cauliflower raw, cut into small florets and stem removed",
       "1 large egg",
       "1/2 cup shredded Parmesan cheese",
@@ -59,6 +64,7 @@ let reci = {
       "2 thick slices of white cheddar cheese you can also use shredded cheddar cheese",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat oven to 450°F. Place cauliflower into food processor and pulse until crumbs about half the size of a grain of rice.",
       "Place cauliflower into large microwave-safe bowl and microwave for 2 minutes. Your cauliflower should be soft and tender (and hot!). (If you don't want to use the microwave to dry out the cauliflower and prefer to steam and wring with a cloth to dry, check out my wringing instructions here.)",
       "Stir cauliflower to mix up the bottom and top cauliflower. Place back into the microwave and cook for another 3 minutes. Remove and stir again so that all the cauliflower cooks evenly. Place back into microwave and cook for 5 minutes. At this point, you should see the cauliflower is starting to become more dry. Microwave for another 5 minutes. Cauliflower should still be slightly moist to the touch, but should look dry and clumped up (like photo above; similar to as if someone had chewed it up and spit it back out.) If you've made cauliflower pizza or breadsticks with the cloth wringing dry method, it should look the same.",
@@ -71,6 +77,7 @@ let reci = {
     url: "https://www.ketoconnect.net/creamy-cauliflower-mash/",
     image: "https://i.imgur.com/Nwto9hu.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "5 cups cauliflower chopped",
       "1/4 cup Heavy Whipping Cream",
       "3 tbsp Butter",
@@ -81,6 +88,7 @@ let reci = {
       "Pink Himalayan Salt (to taste)",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Chop up 5 cups of raw cauliflower.",
       "Bring pot of water to a boil (enough to cover all the cauliflower), add the cauliflower and boil for 15 minutes or until tender.",
       "Drain cauliflower and place in processor.",
@@ -95,6 +103,7 @@ let reci = {
     url: "https://peaceloveandlowcarb.com/low-carb-keto-everything-bagels/",
     image: "https://i.imgur.com/byQnAkr.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "2 cups almond flour",
       "1 tablespoon baking powder",
       "1 teaspoon garlic powder",
@@ -106,6 +115,7 @@ let reci = {
       "3 tablespoons Everything Bagel Seasoning",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat oven to 425Â°. Line a rimmed baking sheet with parchment paper or a Silpat.",
       "In a medium mixing bowl, combine the almond flour, baking powder, garlic powder, onion powder, and dried Italian seasoning. Mix until well combined. I like to put the mixture through a flour sifter to ensure that all the baking powder gets mixed in with the rest of the ingredients.",
       "Crack one of the eggs into a small bowl and fork whisk. This will be the egg wash for the top of the bagels. The other two eggs will go in the dough.",
@@ -123,6 +133,7 @@ let reci = {
     url: "https://www.ditchthecarbs.com/fat-head-nachos/",
     image: "https://i.imgur.com/KHCDWUX.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "170 g pre-shredded/grated mozzarella",
       "85 g almond meal/flour",
       "2 tbsp cream cheese",
@@ -133,6 +144,7 @@ let reci = {
       "pinch chilli powder",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "1 red onion diced",
       "500 g ground/mince beef",
       "400 g tinned/canned tomatoes diced",
@@ -145,6 +157,7 @@ let reci = {
     url: "https://elanaspantry.com/keto-lime-popsicles/",
     image: "https://i.imgur.com/R2FlHuv.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 can full fat coconut milk",
       "½ cup mashed avocado",
       "½ cup lime juice, freshly squeezed",
@@ -152,6 +165,7 @@ let reci = {
       "⅛ teaspoon vanilla powder",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "In a vitamix combine coconut milk, avocado, lime juice, stevia, and vanilla",
       "Blend until smooth",
       "Transfer mixture to a popsicle mold",
@@ -164,6 +178,7 @@ let reci = {
     url: "https://draxe.com/recipes/baba-ganoush/",
     image: "https://i.imgur.com/8wmfLRS.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 medium eggplant, sliced",
       "¼ cup tahini",
       "3–4 garlic cloves, smashed",
@@ -172,6 +187,7 @@ let reci = {
       "Sea salt and pepper to taste",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "On a baking sheet lined with parchment paper, lay out the eggplant slices.",
       "Salt the eggplant and allow eggplant to sit for 15–20 minutes to remove moisture.",
       "Use a paper towel to dab eggplant, removing excess water.",
@@ -187,12 +203,14 @@ let reci = {
     url: "https://www.homemadeinterest.com/low-carb-taco/",
     image: "https://i.imgur.com/LvOwaDa.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 pound Ground beef",
       "2 tablespoon Homemade Taco Seasoning",
       "1/4 cup Water",
       "Toppings for taco: Sour cream, avocado, cheese, lettuce, etc., optional",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat oven to 350F.",
       "On a baking sheet lined with parchment paper or a silicone mat place 1/4 cup piles of cheese 2 inches apart. Press the cheese down lightly so it makes one layer.",
       "Place baking sheet in the oven and bake for 5-7 minutes or until the edges of the cheese are brown.",
@@ -209,6 +227,7 @@ let reci = {
     url: "http://www.modernlowcarb.com/recipes/2015/5/31/low-carb-portabella-sliders-keto-gluten-free",
     image: "https://i.imgur.com/MuUSAME.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 pound grass fed beef (I like 80/20 for burgers)",
       "24 baby portabella mushrooms",
       "4 slices sharp cheddar, sliced into quarters",
@@ -220,6 +239,7 @@ let reci = {
       "salt and pepper to taste",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "-Remove stems from portabella mushroom caps and wipe with a damp paper towel to remove any dirt or debris.  In a small saucepan, heat 1 tbsp olive oil over medium heat.  Add mushroom caps and cook for 2 minutes on each side, allowing mushrooms to cook through but retain firmness.",
       "-Remove mushrooms from pan and place on paper towels to allow liquid to drain off.",
       "-Divide the ground beef into 12 portions, rolling each into a small disc shape. Add salt and pepper to taste.  In a large grill pan, heat remaining tbsp olive oil over medium heat.  Once the pan is hot, add the meat and allow to cook for 3 minutes on one side.  Flip and allow to cook for 3 minutes on the other side.  Cook to desired level of doneness (I like burgers cooked to medium).",
@@ -283,6 +303,7 @@ let reci = {
     url: "https://www.marksdailyapple.com/primal-keto-ice-cream/",
     image: "https://i.imgur.com/iS2Mc5U.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 13.5 ounce can full-fat coconut milk (400 ml)",
       "1 scoop PRIMAL KITCHEN® Vanilla Coconut Collagen Fuel (16.5 g)",
       "¼ cup macadamia nut butter* (60 ml)",
@@ -290,6 +311,7 @@ let reci = {
       "pinch of salt",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "To make macadamia butter, blend 1 cup raw, unsalted macadamia nuts in the food processor for 3 to 5 minutes until very smooth.",
       "To make the ice cream, whisk coconut milk, PRIMAL KITCHEN® Collagen Fuel, macadamia butter, vanilla, and salt together until smooth. If making chocolate ice cream, whisk in cocoa powder.",
     ],
@@ -313,6 +335,7 @@ let reci = {
       "Freshly ground pepper, to taste",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Prepare the cauliflower by cutting into bite-sized pieces. You can do this with a knife or if you want smaller pieces, shred. Steam for 2-3 minutes. Drain and set aside to cool.",
       "Peel eggs and separate yolks, set aside. Cut the whites into small bite size pieces. Mix the egg whites into the cauliflower mixture in a large bowl along with chopped pickle, green onion and parsley.",
       "Add egg yolks, mayo, mustard, pickle juice, salt and pepper into your high-powered blender and blend until smooth. Pour over the cauliflower mixture and stir to coat. Chill overnight and serve.",
@@ -344,6 +367,7 @@ let reci = {
       "1 egg white",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat oven for 350F and set aside a 9×13 casserole dish.",
       "Add bacon and beef to a large pot and cook on medium-high until beef is no longer pink.",
       "Add carrots, onion and celery. Cook for 10 minutes, stirring every couple of minutes.",
@@ -371,6 +395,7 @@ let reci = {
       "1 tablespoon (14g) coconut oil",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "In a bowl, combine all peanut butter ball ingredients until well-mixed and a dough is formed. If the peanut butter is too stiff to easily stir, let it soften at room temperature until it becomes more manageable.",
       "Prepare a baking sheet lined with parchment paper. Form twelve 1-inch balls from the peanut butter mixture and arrange them in a single layer on the parchment paper. Place in the freezer for at least 30 minutes to harden. The longer you let them freeze, the easier it will be to dip them into chocolate without becoming too soft and losing their shape.",
       "In a bowl, add all chocolate coating ingredients. Microwave in 30-second intervals, thoroughly stirring in between, until melted and smooth. Make sure you don't overheat the chocolate.",
@@ -383,6 +408,7 @@ let reci = {
     url: "https://www.savorytooth.com/keto-shake/",
     image: "https://i.imgur.com/4hwPHNH.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 cup unsweetened plain almond milk ",
       "1/2 cup boiling water",
       "1/2 cup crushed ice",
@@ -394,6 +420,7 @@ let reci = {
       "1/8 teaspoon table salt",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "<p class='org-text'>Recommended Blender Method</p>",
       "Add swerve, cocoa powder, vanilla, and salt to blender. Pour boiling water on top, then add cream cheese and peanut butter. Blend until cream cheese and peanut butter are fully dissolved. Add crushed ice, and blend until ice is melted. Stir in almond milk. Serve.",
       "<p class='org-text'>Alternate Shake Method </p>",
@@ -405,6 +432,7 @@ let reci = {
     url: "https://www.savorytooth.com/iced-tea/",
     image: "https://i.imgur.com/520j42L.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "6 black tea packets or 2 tablespoons loose black tea",
       "2 lemons",
       "1/2 cup confectioners swerve sweetener",
@@ -412,6 +440,7 @@ let reci = {
       "4 cups water",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "<p class='org-text'>Make Hot Tea:</p> Add tea bags to a pitcher with 2-quart capacity (8 cups), safe for hot water and rapid temperature changes. Bring 4 cups water to a simmer. Pour hot water into the pitcher over tea bags. Steep tea for 5 minutes or to desired strength, then remove and discard tea bags.",
       "<p class='org-text'>Add Other Ingredients:</p> Stir in sweetener until fully dissolved in the hot water. Cut lemons in half and squeeze them until you have 1/4 cup of juice, discarding any seeds. Any unused lemon halves can be cut into slices or wedges to be used as garnish. Add lemon juice and ice cubes.",
       "<p class='org-text'>Shake & Serve:</p> Securely close the pitcher with the lid. Shake a few times or until mixed. Add any lemon slices or wedges as garnish. Serve iced tea.",
@@ -422,6 +451,7 @@ let reci = {
     url: "https://www.savorytooth.com/low-carb-crackers/",
     image: "https://i.imgur.com/qT9yNjV.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "3/4 cup blanched almond flour (3 ounces weight)",
       "1/2 cup finely grated parmesan cheese with sandy texture (2 ounces weight)",
       "1 large egg beaten",
@@ -429,6 +459,7 @@ let reci = {
       "1/4 teaspoon salt",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 350 F.",
       "Combine all dry ingredients (almond flour, parmesan cheese, pepper, salt) in a bowl, stirring together until well-mixed.",
       "Add about two-thirds of the beaten egg and stir together until it forms a cohesive and rollable dough. Use hands to form the dough, if needed. Set aside the remaining egg.",
@@ -445,6 +476,7 @@ let reci = {
     url: "https://www.thelittlepine.com/keto-chocolate-milk/",
     image: "https://i.imgur.com/2srnIS7.jpg",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "2 Cups Low Carb Milk (coconut or almond)",
       "4 Tablespoons Cocoa Powder (dutch process is best!)",
       "4 Tablespoons Swerve or Lakanto (granulated)",
@@ -452,6 +484,7 @@ let reci = {
       "Pinch Kosher Salt",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Place all ingredients in a blender and blend until everything has combined.",
       "Pour into 2 glasses and enjoy!",
     ],
@@ -461,6 +494,7 @@ let reci = {
     url: "https://thatlowcarblife.com/cauliflower-mac-and-cheese/",
     image: "https://i.imgur.com/Sj48eWn.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "16 ounces cauliflower, chopped into macaroni sized pieces",
       "¼ cup heavy cream",
       "2 ounces cream cheese, room temperature",
@@ -471,6 +505,7 @@ let reci = {
       "½ teaspoon cracked pepper",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Bring a pot of water to a boil. Add the cauliflower pieces and boil for 5 minutes.",
       "Drain the water and return the cauliflower to the pot over low heat.",
       "Add the remaining ingredients and stir well until the cheese has melted fully, about 3 minutes.",
@@ -484,6 +519,7 @@ let reci = {
     url: "https://www.heyketomama.com/keto-lemon-bars/",
     image: "https://i.imgur.com/o28vQaq.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1/2 cup butter, melted",
       "1 3/4 cups almond flour, divided",
       "1 cup powdered erythritol, divided",
@@ -491,6 +527,7 @@ let reci = {
       "3 large eggs",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Mix butter, 1 cup almond flour, 1/4 cup erythritol, and a pinch of salt. Press evenly into an 8×8″ parchment paper-lined baking dish. Bake for 20 minutes at 350 degrees F. Then, let cool for 10 minutes.",
       "Into a bowl, zest one of the lemons, then juice all 3 lemons, add the eggs, 3/4 cup erythritol, 3/4 cup almond flour & pinch of salt. Combine to make filling.",
       "Pour the filling onto the crust & bake for 25 minutes.",
@@ -502,6 +539,7 @@ let reci = {
     url: "https://www.heyketomama.com/keto-vanilla-pound-cake/",
     image: "https://i.imgur.com/1X5wdrZ.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "2 cups almond flour",
       "1/2 cup butter",
       "1 cup granular erythritol (Swerve)",
@@ -512,6 +550,7 @@ let reci = {
       "4 large eggs",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat oven to 350 degrees Fahrenheit",
       "Generously butter a 9 inch bundt pan, set aside",
       "Combine almond flour and baking powder in a large bowl, set aside",
@@ -549,6 +588,7 @@ let reci = {
       "1/2 tsp vanilla extract",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "In a mug, combine all your cake ingredients and mix thoroughly until everything is well incorporated. You can do this in a blender or food processor too. Microwave on high heat for 90 seconds. Take your cake out of the mug and let it completely cool down. Slice your cake to make 2 layers and place them somewhere cool.",
       "In a bowl, add cream cheese, erythritol and vanilla extract. Using an electric hand mixer whip all the ingredients together until you get a soft creamy mixture. Add your whipping cream and mix again for 5 minutes. Set aside.",
       "Take one layer of the cake and scoop on top of it one heaped tbsp of your cream cheese frosting. Gently place the top layer on it and scoop on top of it another heaped tbsp of cream cheese frosting. Using the back for the spoon, spread the remaining frosting in any way you prefer. ",
@@ -577,6 +617,7 @@ let reci = {
       "3 eggs",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 350 degrees F (175 degrees C).",
       "Pulse almonds and pecans together in a food processor until ground, but not paste-like. Add sweetener and butter; pulse to combine. Press mixture into the bottom of a 9-inch springform pan.",
       "Bake in the preheated oven until crust is golden brown, about 10 minutes. Let cool 10 minutes.",
@@ -589,6 +630,7 @@ let reci = {
     url: "https://kirbiecravings.com/keto-low-carb-bang-bang-cauliflower/",
     image: "https://i.imgur.com/9TbUH5S.jpg",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "12 oz cauliflower cut into bite sized pieces (about 1/2 a large head of cauliflower)",
       "cooking oil for frying",
       "1 large egg whisked",
@@ -605,6 +647,7 @@ let reci = {
       "1 tsp lime juice",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "In a small bowl, whisk egg with heavy cream. Set aside.",
       "In a medium bowl, whisk together almond flour and cheese. Set aside.",
       "Line a medium baking sheet with parchment paper. Spoon a small amount of breading onto your sheet pan (just enough to cover the bottom of a cauliflower bite).",
@@ -624,12 +667,14 @@ let reci = {
     url: "https://www.allrecipes.com/recipe/264650/keto-peanut-butter-fudge-fat-bomb/",
     image: "https://i.imgur.com/IXBtxTL.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 cup unsweetened peanut butter, softened",
       "1 cup coconut oil",
       "¼ cup unsweetened vanilla-flavored almond milk",
       "2 teaspoons vanilla liquid stevia, or as needed",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Line a loaf pan with parchment paper.",
       "Combine peanut butter and coconut oil in a microwave-safe dish. Microwave 30 seconds until slightly melted. Add to blender with almond milk and stevia; blend until well combined. Pour into loaf pan and refrigerate until set, about 2 hours.",
     ],
@@ -639,6 +684,7 @@ let reci = {
     url: "https://www.allrecipes.com/recipe/268690/keto-coconut-cookies/",
     image: "https://i.imgur.com/HztxEje.png",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "¾ cup granular sucralose sweetener",
       "½ cup butter",
       "3 eggs",
@@ -652,6 +698,7 @@ let reci = {
       "½ teaspoon salt",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 350 degrees F (175 degrees C). Line a baking sheet with parchment paper.",
       "Beat sweetener and butter together in a bowl until creamy. Add eggs, heavy cream, and almond milk; beat until smooth. Scrape down sides with a spatula.Mix coconut flakes, coconut flour, almond flour, baking powder, baking soda, and salt together in a separate bowl. Beat into the butter mixture until dough comes together.",
       "Drop teaspoonfuls of cookie dough onto the baking sheets.",
@@ -663,6 +710,7 @@ let reci = {
     url: "https://www.dietdoctor.com/recipes/keto-chaffles",
     image: "https://i.imgur.com/ChufqmZ.jpg",
     ing: [
+		"<p class='org-text'>Ingredients<p>",
       "1 oz. butter, melted",
       "4 eggs",
       "8 oz. (1 cup equals 4 oz) mozzarella cheese, shredded",
@@ -670,6 +718,7 @@ let reci = {
       "1 pinch salt (optional)",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Pre-heat your waffle maker.",
       "Place all of your ingredients (save some of the butter to grease the waffle maker) into a mixing bowl and beat to combine.",
       "Lightly grease your waffle iron with butter and then evenly spoon the mixture over the bottom plate, spreading it out slightly to get an even result. Close the waffle iron and cook for approx 6 minutes, depending on your waffle maker.",
@@ -681,8 +730,11 @@ let reci = {
     name: "Homemade Almond Butter",
     url: "https://www.dietdoctor.com/recipes/homemade-almond-butter",
     image: "https://i.imgur.com/NQxsc9f.jpg",
-    ing: ["½ lb almonds", "1 tbsp coconut oil", "1 pinch sea salt"],
+    ing: [
+		"<p class='org-text'>Ingredients<p>",
+		"½ lb almonds", "1 tbsp coconut oil", "1 pinch sea salt"],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 300°F (150°C).",
       "Distribute the almonds on a baking tray and roast in the oven until golden. It will take about 15-20 minutes. Stir or shake occasionally. Allow to cool completely.",
       "Mix the roasted almonds in a blender or food processor with the coconut oil and salt. Be patient, it will take some time to get the nut butter real creamy and smooth. The speed depends on the kitchen equipment you use.",
@@ -693,12 +745,14 @@ let reci = {
     url: "https://www.dietdoctor.com/recipes/keto-buttercream",
     image: "https://i.imgur.com/AF7QDnG.jpeg",
     ing: [
+	  "<p class='org-text'>Ingredients<p>",
       "8 oz. unsalted butter, at room temperature, divided",
       "2 tsp vanilla extract",
       "1½ tsp ground cinnamon",
       "1 tsp erythritol (optional)",
     ],
     dir: [
+	  "<p class='org-text'>Instructions<p>",
       "Brown 1/4 of the butter in a small sauce pan until it turns amber in color, but without burning it.",
       "Pour the browned butter in a beaker and whisk in the rest of the butter bit by bit with a hand mixer until fluffy.",
       "Add cinnamon, vanilla and optional sweetener towards the end.",
@@ -724,6 +778,7 @@ let reci = {
       "sea salt and ground black pepper",
     ],
     dir: [
+		"<p class='org-text'>Instructions<p>",
       "Preheat the oven to 400°F (200°C).",
       "Start by making the crust. Crack eggs into a medium-sized bowl and add shredded cheese. Give it a good stir to combine.",
       "Use a spatula to spread the cheese and egg batter on a baking sheet lined with parchment paper. You can form two round circles or just make one large rectangular pizza. Bake in the oven for 15 minutes until the pizza crust turns golden. Remove and let cool for a minute or two.",
@@ -796,10 +851,12 @@ let reci = {
       "½ cup water",
     ],
     dir: [
+	  "<p class='org-text'>Meat filling</p>",
       "Preheat the oven to 350°F (175°C).",
       "Fry onion and garlic in butter or olive oil over medium heat for a few minutes, until onion is soft. Add ground beef and keep frying. Add oregano or basil. Salt and pepper to taste.",
       "Add tomato paste or ajvar relish. Add water. Lower the heat and let simmer for at least 20 minutes. While the meat simmers, make the dough for the crust.",
-      "Mix all the crust ingredients in a food processor for a few minutes until the dough turns into a ball. If you don't have a food processor, you can mix by hand with a fork.",
+      "<p class='org-text'>Pie crust</p>",
+	  "Mix all the crust ingredients in a food processor for a few minutes until the dough turns into a ball. If you don't have a food processor, you can mix by hand with a fork.",
       "Place a round piece of parchment paper in a well-greased springform pan or deep-dish pie pan — 9-10 inches (23-25 cm) in diameter — to make it easier to remove the pie when it's done. Spread the dough in the pan and up along the sides. Use a spatula or well-greased fingers. Once the crust is shaped to the pan, prick the bottom of the crust with a fork.",
       "Pre-bake the crust for 10-15 minutes. Remove from the oven and place the meat in the crust. Mix cottage cheese and shredded cheese together, and layer on top of the pie.",
       "Bake on lower rack for 30-40 minutes or until the pie has turned a golden color.",

@@ -281,15 +281,7 @@ h1.brand-logo.center.white-text {
     height: auto;
 }
 
-h2.center.white-text {
-    font-weight: 800;
-    background: #f12711;
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-    background: linear-gradient(to right, #f5af19, #f12711);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .recipe-filter-btn {
     background-color: #d81b60;
     color: white !important; 

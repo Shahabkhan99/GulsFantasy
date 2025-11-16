@@ -78,8 +78,10 @@ a, a:hover {
   color: #333; /* Darker text on hover */
 }
 
-
-
+h2 {
+  color: #fff;
+  font-size: 35px;
+}
 
 
 .fh5co-banner-text-box {

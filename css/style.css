@@ -314,18 +314,28 @@ a, a:hover {
   bottom: 0px;
   top: auto;
 }
+
+
+
 .fh5co-content-box .gallery .card {
   border: none;
   background: transparent;
+	display: flex;
+  flex-direction: column;
+	height: auto !important; 
+  max-height: none !important;
 }
 .fh5co-content-box .gallery .card img {
   border-radius: 0;
-  max-height: auto;
+  height: auto !important; 
+  max-height: none !important;
 }
 .fh5co-content-box .gallery .card .card-body {
   background: #ff0077;
+	flex-grow: 1;
 	  height: auto;
-	  width: auto;
+	  /*width: auto;*/
+	overflow: visible;
 }
 .fh5co-content-box .gallery .card .card-body h4 {
   color: #fff;
@@ -334,6 +344,11 @@ a, a:hover {
   font-family: 'Lato', sans-serif;
   font-weight: auto;
 }
+
+
+
+
+
 
 footer {
   background: #101011;
@@ -453,6 +468,9 @@ footer::before {
 
   .fh5co-content-box .pr-0 img {
     margin: 20px auto;
+  }
+	.fh5co-content-box .col-md-4 {
+    padding: 0 !important;
   }
   .fh5co-content-box .col-md-5 {
     padding: 0 !important;

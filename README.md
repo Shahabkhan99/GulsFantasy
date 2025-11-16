@@ -1,6 +1,6 @@
-# Fitness-Forward: Empowering Women's Wellness
+# Gul's Fantasy Fitness-Forward: Empowering Women's Wellness
 Welcome to the official project outline for our new women's health and fitness platform.
-Our mission is to create a supportive, empowering & informative space for women to achieve their wellness goals, 
+Our mission is to create a supportive, empowering and informative space for women to achieve their wellness goals, 
 whatever they may be. 
 We're moving beyond the basics to build a comprehensive resource for a healthy body and mind.
 
@@ -11,6 +11,7 @@ We're moving beyond the basics to build a comprehensive resource for a healthy b
 4. Personalized Wellness Plans: Get a customized diet and workout plan based on your specific goals, lifestyle, and preferences.
 5. Community & Support Hub: Engage with a vibrant community of like-minded women. Share your progress, ask for advice, and find motivation in a safe and positive environment.
 6. Resource & Learning Center: Access a wealth of articles and expert advice on topics crucial to women's health, from fitness tips and mental well-being to nutritional guidance.
-
+7. with weekly workout and fitness deit planer
+![image](images/logo.png)
 ![image](images/homepage.png)
 

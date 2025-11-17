@@ -37,7 +37,7 @@ https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
 
 .background-img-tape-long {
   background:
-  #f0f5fa
+  #000
   url('../img/tape.jpg')
   center/cover
   no-repeat;
@@ -45,19 +45,19 @@ https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
 
 .background-img-tape-fixed {
   background:
-  #f0f5fa
+  #000
   url('../img/tape.jpg')
   top/cover
   no-repeat
   fixed;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">}
 
 /* code copied from love-running project with Code Institute*/
 .background-tape-animated {
   height: 600px;
   width: 100%;
   background:
-  #f0f5fa
+  #000
   url('../img/tape.jpg')
   center/cover
   no-repeat;
@@ -90,15 +90,15 @@ https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
 
 /* gradinet copied from Felipe Souza Alarcon on mentoring session 10.08.2021*/
 .my-gradient-background {
-  background: linear-gradient(to bottom, #FF0077, rgba(0, 0, 0, 0.99));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.99));
 }
 
 .my-gradient-to-left {
-  background: linear-gradient(to left, #ff0077, rgba(0, 0, 0, 0.90));
+  background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0, 0, 0, 0.90));
 }
 
 .my-white-gradient-to-left {
-  background: linear-gradient(to left, #84003D, rgba(255, 255, 255, 0.1));
+  background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(255, 255, 255, 0.9));
 }
 
 .my-box-shadow {  

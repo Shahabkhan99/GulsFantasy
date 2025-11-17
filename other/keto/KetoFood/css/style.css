@@ -41,13 +41,15 @@ body nav .navbar-nav a:hover {
   background: rgba(199, 21, 133, 0.6); /* semi-transparent blue  !important; */
 }
 body nav .navbar-nav .btn-danger {
-  background: transparent;
-  border-color: transparent;
+  background: none;
+  border-color: none;
   border-radius: 0;
+	box-shadow: none;
 }
 body nav .navbar-nav .btn-danger:hover {
-  background: #000;
-  border-color: #000;
+  background: none;
+  border-color: none;
+  box-shadow: none;
 }
 
 a, a:hover {

@@ -1,13 +1,9 @@
-html, body {
-   width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* This hides the side scroll */
-	font-family: 'Lato', sans-serif;
-  	overflow: hidden;
-  	overflow-y: scroll;
-  	/*background-color: #000;*/
+/*#ff0077*/
+body {
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #000;
 }
 
 .navbar-brand {
@@ -50,12 +46,10 @@ body nav .navbar-nav .btn-danger {
   border-radius: 0;
   align-content: center;
   padding: auto;
-  box-shadow: none;
 }
 body nav .navbar-nav .btn-danger:hover {
-  background: none;
-  border-color: transparent;
-  box-shadow: none;
+  background: #000;
+  border-color: #000;
 }
 
 a, a:hover {
@@ -462,7 +456,7 @@ footer::before {
     top: 50%;
   }
 }
-@media (max-width : 741px ){
+@media (max-width: 767px) {
   body nav .navbar-nav {
     margin-left: 0 !important;
     max-width: 1000px;
@@ -641,6 +635,16 @@ option {
   overflow: auto;
 }
 
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup1{
+    width: 70%;
+  }
+}
+
+
 
 .popup2 {
   margin: 70px auto;
@@ -676,16 +680,20 @@ option {
   overflow: auto;
 }
 
-
 @media screen and (max-width: 700px){
-  /* You can list multiple classes separated by commas */
-  .box, 
-  .popup1, 
-  .popup2, 
-  .popup3 {
-    width: 70%; /* Note: On mobile, usually 90% or 100% looks better than 70% */
+  .box{
+    width: 70%;
+  }
+  .popup2{
+    width: 70%;
   }
 }
+
+
+
+
+
+
 .popup3 {
   margin: 70px auto;
   padding: 20px;
@@ -720,6 +728,14 @@ option {
   overflow: auto;
 }
 
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup3{
+    width: 70%;
+  }
+}
 p + p {
   margin: -10px;
   padding: 0px;

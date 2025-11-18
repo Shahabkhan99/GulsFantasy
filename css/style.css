@@ -1,4 +1,20 @@
 /*#ff0077*/
+
+/* --- GLOBAL RESPONSIVE FIXES --- */
+
+/* 1. Prevent Horizontal Scrolling (Out of Range) */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Cuts off anything sticking out the side */
+}
+
+/* 2. Make all images flexible by default */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
@@ -735,6 +751,32 @@ option {
   .popup3{
     width: 70%;
   }
+}
+
+/* 3. MOBILE PARALLAX OVERRIDE 
+   This targets your specific class .parallax-window2 on screens smaller than 768px (Mobile)
+*/
+@media (max-width: 768px) {
+    .parallax-window2, 
+    .bg-img, 
+    .parallax-window {
+        /* FORCE the image to appear */
+        background-attachment: scroll !important; 
+        background-position: center center !important;
+        background-size: cover !important;
+        
+        /* FORCE a height so it doesn't collapse to 0 */
+        min-height: 300px !important; 
+        height: auto !important;
+
+        /* Reset any weird margins causing "out of range" issues */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        
+        /* Ignore the data-position-y="-400px" from the HTML */
+        transform: none !important; 
+    }
 }
 p + p {
   margin: -10px;

@@ -11,10 +11,10 @@ h2 {
 /* Platform – Fixed size, movable */
 #platform {
     position: relative;
-    width: 1000px;
-    height: 563px;
+    width: 440px;
+    height: 600px;
     margin: 10px auto;
-    background: url('assets/images/illustration-els.png') no-repeat;
+    background: url('assets/images/55.png') no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
     transition: transform 0.3s ease; /* Smooth slide on mobile */
@@ -23,7 +23,7 @@ h2 {
 /* MOBILE: Push platform LEFT to show inputs on right */
 @media (max-width: 1100px) {
     #platform {
-        margin-left: -600px;   /* Push left by 400px */
+        margin-left: auto;   /* Push left by 400px */
         margin-right: auto;
     }
 }
@@ -31,7 +31,8 @@ h2 {
 /* Extra small phones: Push even more */
 @media (max-width: 680px) {
     #platform {
-        margin-left: -570px;   /* More push for small screens */
+        margin-left: auto;   /* More push for small screens */
+		margin-right: auto;
     }
 }
 
@@ -45,8 +46,57 @@ h2 {
     color: #d13065;
     font-weight: 600;
 }
-#inputs1 { top: 110px; left: 790px; width: 230px; }
-#inputs2 { top: 195px; left: 790px; width: 230px; }
+#inputs1 {
+    top: 180px;
+    left: 40px;
+    width: 180px;
+    /* *** START Glassy & Rounded Updates ***
+    */
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent white background */
+    backdrop-filter: blur(1px); /* Glassy effect */
+    -webkit-backdrop-filter: blur(1px); /* For Safari support */
+    border-radius: 25px; /* Adjust for desired roundness (e.g., 25px for pill shape) */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border for definition */
+    /* *** END Glassy & Rounded Updates ***
+    */
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Removed redundant 'border: none;' since a border is now defined */
+	
+	
+	
+}
+#inputs2 {
+
+    /* *** START Glassy & Rounded Updates ***
+    */
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent white background */
+    backdrop-filter: blur(1px); /* Glassy effect */
+    -webkit-backdrop-filter: blur(1px); /* For Safari support */
+    border-radius: 25px; /* Adjust for desired roundness (e.g., 25px for pill shape) */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border for definition */
+    /* *** END Glassy & Rounded Updates ***
+    */
+	
+	
+	top: 250px;
+    left: 40px;
+    width: 180px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Removed redundant 'border: none;' since a border is now defined */
+	
+}
 
 .field {
     background: transparent;
@@ -61,14 +111,14 @@ h2 {
 .unit {
     font-size: 18px;
     color: #d13065;
-    margin-left: 4px;
+    margin-left: 5px;
 }
 
 /* Switch Toggle */
 #toggleSwitch {
     position: absolute;
-    top: 255px;
-    left: 870px;
+    top: 217px;
+    left: 235px;
     width: 60px;
     height: 15px;
     background: rgba(255, 255, 255, 0.2);
@@ -113,14 +163,24 @@ h2 {
 /* Calculate Button */
 #calcBtn {
     position: absolute;
-    top: 300px;
-    left: 720px;
-    width: 250px;
+    top: 320px;
+    left: 58px;
+    width: 150px;
     height: 45px;
-    background: transparent;
-    border: none;
+    
+    /* *** START Glassy & Rounded Updates *** */
+    background: rgba(255, 255, 255, 0.2); /* Base background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* *** END Glassy & Rounded Updates *** */
+    
+    /* Added for smooth transition */
+    transition: background 0.3s ease; 
+    
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: white;
     display: flex;
@@ -128,15 +188,36 @@ h2 {
     justify-content: center;
 }
 
+/* *** HOVER EFFECT *** */
+#calcBtn:hover {
+    /* New background color for hover: less transparency to make it stand out */
+    background: rgba(251,0,4,0.50); 
+    /* Optional: You could also change the border or text color if you want */
+}
+
 /* Result */
 #result {
     position: absolute;
-    top: 380px;
-    left: 720px;
-    width: 250px;
+    top: 448px;
+    left: 86px;
+    width: 220px;
     text-align: center;
+
+    /* *** START Glassy & Rounded Updates ***
+    */
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent white background */
+    backdrop-filter: blur(1px); /* Glassy effect */
+    -webkit-backdrop-filter: blur(1px); /* For Safari support */
+    border-radius: 25px; /* Adjust for desired roundness (e.g., 25px for pill shape) */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border for definition */
+    /* *** END Glassy & Rounded Updates ***
+    */
+    cursor: pointer;
     font-size: 48px;
-    font-weight: 800;
-    color: #fff;
-    display: none;
+    font-weight: 600;
+    color: #ff0077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Removed redundant 'border: none;' since a border is now defined */
 }

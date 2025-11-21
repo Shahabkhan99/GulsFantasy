@@ -458,6 +458,19 @@ footer::before {
   width: 100%;
   left: 0;
 }
+footer h5 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  
+  /* --- Block Centering (Requires a width) --- */
+  width: 50%; /* Example: Set a specific width for the block */
+  margin-left: auto;
+  margin-right: auto; /* Or use the shorthand: margin: 0 auto; */
+  
+  /* --- Content Centering --- */
+  text-align: center; 
+}
 
 @media (max-width: 1199px) {
   .fh5co-content-box .pr-0 img {
@@ -791,4 +804,5 @@ br {
 }
 br:after {
   content: " "; /* Adds a space after the modified br */
+
 }

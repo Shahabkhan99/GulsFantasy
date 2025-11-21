@@ -29,7 +29,7 @@ body {
   z-index: 100px;    /* Ensures it stacks 'above all' other content */
 }
 #mainLogo {
-  width: 380px;
+  width: 480px;
   height: 180px;   /* Recommended: Keeps the logo from stretching */
   background-repeat: no-repeat;
   background-position: left;
@@ -272,8 +272,10 @@ a, a:hover {
   background: #ccc;
   border-radius: 10px;
   padding: 20px;
-  max-height: 180px;   /* ✅ smaller box height */
+  max-height: 220px;   /* ✅ smaller box height */
+  max-width: inherit;	
   overflow: hidden;    /* keeps content inside */
+  text-align: center;
 }
 
 .fh5co-content-box .trainers .card .card-body::before {
@@ -367,97 +369,17 @@ a, a:hover {
 
 
 footer {
+
   background: #101011;
   color: #fff;
 }
+
 footer .footer1 p {
-  margin-top: 30px;
-}
-footer .footer2 h4 {
-  color: #ff0077;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  text-align: center;
-  margin: 20px auto;
-}
-footer .footer2 .form-box {
-  background: #fff;
-  padding: 20px 30px;
-  margin-top: -30px;
-}
-footer .footer2 input[type='text'], footer .footer2 input[type='email'] {
-  background: transparent;
-  border-radius: 0;
-  border: none;
-  border-bottom: 2px solid #000;
-}
-footer .footer2 input[type='text']:focus, footer .footer2 input[type='email']:focus {
-  box-shadow: none;
-  border-color: #99FF00;
-}
-footer .footer2 .btn {
-  min-width: 150px;
-  border-radius: 0;
-}
-footer .footer2 ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #262626;
-}
-footer .footer2 ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #262626;
-}
-footer .footer2 :-ms-input-placeholder {
-  /* IE 10+ */
-  color: #262626;
-}
-footer .footer2 :-moz-placeholder {
-  /* Firefox 18- */
-  color: #262626;
-}
-footer .footer3 {
-  padding-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px; /* Adjust space between circles */
+  margin-top: 50px;
+
 }
 
-footer .footer3 a {
-  /* Make the <a> tag a flex container to center the icon */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  /* Set the size */
-  height: 40px;
-  width: 40px;
-  
-  /* 50% makes a perfect circle */
-  border-radius: 50%;
-  
-  background: transparent;
-  border: transparent;
-  
-  /* We don't need padding anymore */
-}
-
-footer .footer3 a:hover {
-  background: #99FF00;
-}
-
-footer .table td, footer .table th {
-  border: none;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  border: 3px solid #99FF00;
-  width: 100%;
-  left: 0;
-}
+/* Style for the header inside the footer columns */
 footer h5 {
   color: #fff;
   margin-bottom: 0;
@@ -471,6 +393,44 @@ footer h5 {
   /* --- Content Centering --- */
   text-align: center; 
 }
+
+footer .footer3 {
+
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+	margin-top: 0; 
+  gap: 1px; /* Adjust space between circles */
+
+}
+
+footer .footer3 a {
+
+  /* Make the <a> tag a flex container to center the icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  /* Set the size */
+  height: 40px;
+  width: 50px;
+
+/* 50% makes a perfect circle */
+  border-radius: 0%;
+  background: transparent;
+  border: transparent;
+}
+
+footer .footer3 a:hover {
+
+  background: #99FF00;
+
+}
+
+
+
 
 @media (max-width: 1199px) {
   .fh5co-content-box .pr-0 img {
@@ -574,15 +534,6 @@ footer h5 {
 
 }
 
-* {
-  font-family: 'Roboto', sans-serif;
-}
-html, body {
-  font-size: 16px;
-  
-}
-
-
 
 section#demo {
       position: relative;
@@ -603,7 +554,7 @@ section#demo {
 
 
 .card {
-    height: 700px;
+    height: 750px;
     overflow: hidden;
 }
 
@@ -804,5 +755,4 @@ br {
 }
 br:after {
   content: " "; /* Adds a space after the modified br */
-
 }

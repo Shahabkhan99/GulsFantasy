@@ -18,7 +18,7 @@ img {
 body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   background-color: #000;
 }
 
@@ -756,3 +756,4 @@ br {
 br:after {
   content: " "; /* Adds a space after the modified br */
 }
+
